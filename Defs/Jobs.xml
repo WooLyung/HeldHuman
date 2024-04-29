@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <JobDef>
+        <defName>OperateHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver.JobDriver_OperateHeldHuman</driverClass>
+        <reportString>operating on TargetB by TargetA.</reportString>
+        <casualInterruptible>false</casualInterruptible>
+        <suspendable>false</suspendable>
+    </JobDef>
+</Defs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Human"]/statBases</xpath>
+        <value>
+            <MinimumContainmentStrength>20</MinimumContainmentStrength>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Human"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_HoldingPlatformTarget">
+                <baseEscapeIntervalMtbDays>10</baseEscapeIntervalMtbDays>
+                <hasAnimation>true</hasAnimation>
+            </li>
+            <li Class="CompProperties_ProducesBioferrite">
+                <bioferriteDensity>0.5</bioferriteDensity>
+            </li>
+            <li Class="CompProperties_Studiable">
+                <frequencyTicks>120000</frequencyTicks>
+                <knowledgeCategory>Basic</knowledgeCategory>
+                <anomalyKnowledge>0.5</anomalyKnowledge>
+                <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+                <requiresHoldingPlatform>true</requiresHoldingPlatform>
+            </li>
+        </value>
+    </Operation>
+</Patch>

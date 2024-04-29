@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WorkGiverDef>
+        <defName>OperateHeldHuman</defName>
+        <label>operate on held humans</label>
+        <giverClass>HeldHuman.Def.WorkGiver.WorkGiver_OperateHeldHuman</giverClass>
+        <workType>Doctor</workType>
+        <priorityInType>70</priorityInType>
+        <verb>operate on</verb>
+        <gerund>operating on</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+        <billGiversAllHumanlikes>true</billGiversAllHumanlikes>
+        <billGiversAllHumanlikesCorpses>true</billGiversAllHumanlikesCorpses>
+    </WorkGiverDef>
+</Defs>
