@@ -2,13 +2,11 @@
 using RimWorld;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using Verse;
 
 namespace HeldHuman.Patch.HumanEmbryo_
 {
-    [HarmonyPatch]
     public class GetGizmos_Patch
     {
         static MethodBase TargetMethod() => AccessTools.Method(typeof(HumanEmbryo), "GetGizmos");

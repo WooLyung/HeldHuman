@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+﻿ using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -47,33 +47,52 @@ namespace HeldHuman.Setting
 
         private static void UpdateSettings()
         {
-            ThingDef def = ThingDefOf.Human;
+            foreach (var def in DefDatabase<ThingDef>.AllDefs)
+            {
+                if (def.race == null || !def.race.Humanlike)
+                    continue;
 
-            foreach (CompProperties property in def.comps)
-            {
-                CompProperties_ProducesBioferrite p = property as CompProperties_ProducesBioferrite;
-                if (p == null)
-                    continue;
-                if (settings.enableProducingBioferrate)
-                    p.bioferriteDensity = settings.bioferriteDensity;
-                else
-                    p.bioferriteDensity = 0;
-            }
-  
-            foreach (CompProperties property in def.comps)
-            {
-                CompProperties_Studiable p = property as CompProperties_Studiable;
-                if (p == null)
-                    continue;
-                if (settings.enableStudying)
+                foreach (CompProperties property in def.comps)
                 {
-                    p.frequencyTicks = settings.frequencyTicks;
-                    AccessTools.Field(typeof(CompProperties_Studiable), "anomalyKnowledge").SetValue(p, settings.anomalyKnowledge);
+                    CompProperties_ProducesBioferrite p = property as CompProperties_ProducesBioferrite;
+                    if (p == null)
+                        continue;
+                    if (settings.enableProducingBioferrate)
+                        p.bioferriteDensity = settings.bioferriteDensity;
+                    else
+                        p.bioferriteDensity = 0;
+                }
+
+                if (def == ThingDefOf.CreepJoiner)
+                {
+                    foreach (CompProperties property in def.comps)
+                    {
+                        CompProperties_Studiable p = property as CompProperties_Studiable;
+                        if (p == null)
+                            continue;
+                        if (settings.enableStudying)
+                            AccessTools.Field(typeof(CompProperties_Studiable), "requiresHoldingPlatform").SetValue(p, true);
+                    }
                 }
                 else
                 {
-                    p.frequencyTicks = 0;
-                    AccessTools.Field(typeof(CompProperties_Studiable), "anomalyKnowledge").SetValue(p, 0.0f);
+                    foreach (CompProperties property in def.comps)
+                    {
+                        CompProperties_Studiable p = property as CompProperties_Studiable;
+                        if (p == null)
+                            continue;
+                        if (settings.enableStudying)
+                        {
+                            p.frequencyTicks = settings.frequencyTicks;
+                            AccessTools.Field(typeof(CompProperties_Studiable), "requiresHoldingPlatform").SetValue(p, true);
+                            AccessTools.Field(typeof(CompProperties_Studiable), "anomalyKnowledge").SetValue(p, settings.anomalyKnowledge);
+                        }
+                        else
+                        {
+                            p.frequencyTicks = 0;
+                            AccessTools.Field(typeof(CompProperties_Studiable), "anomalyKnowledge").SetValue(p, 0.0f);
+                        }
+                    }
                 }
             }
         }

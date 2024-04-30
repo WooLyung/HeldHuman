@@ -1,5 +1,4 @@
-﻿using RimWorld;
-using System.Collections;
+﻿ using RimWorld;
 using System.Collections.Generic;
 using Verse;
 
@@ -7,30 +6,19 @@ namespace HeldHuman.Tool
 {
     public static class HumanTool
     {
-        public static bool IsHoldableHuman(Pawn pawn)
-        {
-            if (!pawn.RaceProps.Humanlike)
-                return false;
-            if (pawn.Faction.HostileTo(Faction.OfPlayer) || pawn.IsSlaveOfColony || pawn.IsPrisonerOfColony)
-                return true;
-            return false;
-        }
+        public static bool IsPawn(Thing thing) => thing != null && thing is Pawn;
+        public static bool IsHoldableHuman(Thing thing) => IsPawn(thing) && IsHoldableHuman(thing as Pawn);
+        public static bool IsHoldableHuman(Pawn pawn) => pawn != null && pawn.RaceProps.Humanlike && !pawn.IsMutant;
+        public static bool IsHoldableFaction(Thing thing) => IsPawn(thing) && IsHoldableFaction(thing as Pawn);
+        public static bool IsHoldableFaction(Pawn pawn) => IsHoldableHuman(pawn) && (pawn.Faction.HostileTo(Faction.OfPlayer) || ModsConfig.IdeologyActive && pawn.IsSlaveOfColony || pawn.IsPrisonerOfColony);
+        public static bool IsCreepJoiner(Pawn pawn) => pawn != null && pawn.IsCreepJoiner;
+        public static bool IsMutantHuman(Pawn pawn) => pawn != null && pawn.RaceProps.Humanlike && pawn.IsMutant;
 
         public static IEnumerable<Pawn> GetAllHeldHumans(Map map)
         {
             foreach (Thing holder in map.listerThings.ThingsInGroup(ThingRequestGroup.EntityHolder))
             {
-                if (!(holder is ThingWithComps tHolder))
-                    continue;
-
-                CompEntityHolderPlatform comp = tHolder.GetComp<CompEntityHolderPlatform>();
-                if (comp == null)
-                    continue;
-
-                Pawn pawn = comp.HeldPawn;
-                if (pawn == null)
-                    continue;
-
+                Pawn pawn = PlatformTool.GetHeldPawn(holder);
                 if (IsHoldableHuman(pawn))
                     yield return pawn;
             }
