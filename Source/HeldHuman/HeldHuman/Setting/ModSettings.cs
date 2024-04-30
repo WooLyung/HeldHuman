@@ -1,33 +1,39 @@
-﻿using Verse;
+﻿using System.Runtime;
+using Verse;
 
 namespace HeldHuman.Setting
 {
     public class ModSettings : Verse.ModSettings
     {
-        public bool enableProducingBioferrate = false;
-        public float bioferriteDensity = 0.5f;
+        public bool enableProducingBioferrate;
+        public float bioferriteDensity;
+        public bool enableStudying;
+        public int frequencyTicks;
+        public float anomalyKnowledge;
+        public int powerFactor;
 
-        public bool enableStudying = false;
-        public int frequencyTicks = 120000;
-        public float anomalyKnowledge = 0.5f;
+        private static ModSettings instance;
+        public static ModSettings Instance => instance;
+        public ModSettings() => instance = this;
 
         public void Reset()
         {
             enableProducingBioferrate = false;
             bioferriteDensity = 0.5f;
-
             enableStudying = false;
             frequencyTicks = 120000;
             anomalyKnowledge = 0.5f;
+            powerFactor = 100;
         }
 
         public override void ExposeData()
         {
-            Scribe_Values.Look(ref enableProducingBioferrate, "heldHuman.enableProducingBioferrate");
-            Scribe_Values.Look(ref bioferriteDensity, "heldHuman.bioferriteDensity");
-            Scribe_Values.Look(ref enableStudying, "heldHuman.enableStudying");
-            Scribe_Values.Look(ref frequencyTicks, "heldHuman.frequencyTicks");
-            Scribe_Values.Look(ref anomalyKnowledge, "heldHuman.anomalyKnowledge");
+            Scribe_Values.Look(ref enableProducingBioferrate, "heldHuman.enableProducingBioferrate", false);
+            Scribe_Values.Look(ref bioferriteDensity, "heldHuman.bioferriteDensity", 0.5f);
+            Scribe_Values.Look(ref enableStudying, "heldHuman.enableStudying", false);
+            Scribe_Values.Look(ref frequencyTicks, "heldHuman.frequencyTicks", 120000);
+            Scribe_Values.Look(ref anomalyKnowledge, "heldHuman.anomalyKnowledge", 0.5f);
+            Scribe_Values.Look(ref powerFactor, "heldHuman.powerFactor", 100);
             base.ExposeData();
         }
     }

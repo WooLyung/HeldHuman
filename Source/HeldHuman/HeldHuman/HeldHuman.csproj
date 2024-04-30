@@ -61,6 +61,7 @@
     <Compile Include="Def\WorkGiver\WorkGiver_OperateHeldHuman.cs" />
     <Compile Include="HeldHumanMod.cs" />
     <Compile Include="Patch\Bill.cs" />
+    <Compile Include="Patch\Comp\CompPowerPlantElectroharvester.cs" />
     <Compile Include="Patch\Building\Building_HoldingPlatform.cs" />
     <Compile Include="Patch\Comp\CompHoldingPlatformTarget.cs" />
     <Compile Include="Patch\Comp\CompProducesBioferrite.cs" />
