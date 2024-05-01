@@ -2,9 +2,15 @@
 <Defs>
     <JobDef>
         <defName>OperateHeldHuman</defName>
-        <driverClass>HeldHuman.Def.JobDriver.JobDriver_OperateHeldHuman</driverClass>
+        <driverClass>HeldHuman.Def.JobDriver_.JobDriver_OperateHeldHuman</driverClass>
         <reportString>operating on TargetB by TargetA.</reportString>
         <casualInterruptible>false</casualInterruptible>
         <suspendable>false</suspendable>
     </JobDef>
+
+    <JobDef>
+        <defName>HeldHumanBloodfeed</defName>
+        <driverClass>HeldHuman.Def.JobDriver_.JobDriver_HeldHumanBloodfeed</driverClass>
+        <reportString>feeding on TargetA.</reportString> 
+    </JobDef>    
 </Defs>

@@ -57,10 +57,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Def\JobDriver\JobDriver_HeldHumanBloodfeed.cs" />
     <Compile Include="Def\JobDriver\JobDriver_OperateHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_OperateHeldHuman.cs" />
     <Compile Include="HeldHumanMod.cs" />
-    <Compile Include="Patch\Ability\CompAbilityEffect_BloodfeederBite.cs" />
     <Compile Include="Patch\Base\Bill.cs" />
     <Compile Include="Patch\Building\Building_SubcoreScanner.cs" />
     <Compile Include="Patch\Building\Building_GeneExtractor.cs" />
@@ -73,6 +73,7 @@
     <Compile Include="Patch\Base\Pawn.cs" />
     <Compile Include="Patch\Base\Thing.cs" />
     <Compile Include="Patch\JobDriver\JobDriver_CarryToBuilding.cs" />
+    <Compile Include="Patch\JobGiver\JobGiver_GetHemogen.cs" />
     <Compile Include="Setting\Mod.cs" />
     <Compile Include="Setting\ModSettings.cs" />
     <Compile Include="ToilHelper\ToilFails.cs" />

@@ -6,7 +6,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI;
 
-namespace HeldHuman.Def.JobDriver
+namespace HeldHuman.Def.JobDriver_
 {
     public class JobDriver_OperateHeldHuman : JobDriver_DoBill
     {

@@ -8,7 +8,7 @@ namespace HeldHuman.Tool
     {
         public static bool IsPawn(Thing thing) => thing != null && thing is Pawn;
         public static bool IsHoldableHuman(Thing thing) => IsPawn(thing) && IsHoldableHuman(thing as Pawn);
-        public static bool IsHoldableHuman(Pawn pawn) => pawn != null && pawn.RaceProps.Humanlike && !pawn.IsMutant;
+        public static bool IsHoldableHuman(Pawn pawn) => pawn != null && pawn.RaceProps.Humanlike && !pawn.IsMutant && !pawn.InAggroMentalState;
         public static bool IsHoldableFaction(Thing thing) => IsPawn(thing) && IsHoldableFaction(thing as Pawn);
         public static bool IsHoldableFaction(Pawn pawn) => IsHoldableHuman(pawn) && (pawn.Faction.HostileTo(Faction.OfPlayer) || ModsConfig.IdeologyActive && pawn.IsSlaveOfColony || pawn.IsPrisonerOfColony);
         public static bool IsCreepJoiner(Pawn pawn) => pawn != null && pawn.IsCreepJoiner;
