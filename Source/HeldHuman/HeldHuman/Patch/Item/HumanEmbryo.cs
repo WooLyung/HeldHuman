@@ -15,6 +15,9 @@ namespace HeldHuman.Patch.HumanEmbryo_
 
         static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, HumanEmbryo __instance)
         {
+            if (!ModsConfig.BiotechActive)
+                yield break;
+
             foreach (var gizmo in __result)
             {
                 if (gizmo is Command_Action cmdAction && cmdAction.icon == HumanEmbryo.ImplantIcon.Texture)

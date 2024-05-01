@@ -2,7 +2,6 @@
 using HeldHuman.Tool;
 using RimWorld;
 using System;
-using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 
