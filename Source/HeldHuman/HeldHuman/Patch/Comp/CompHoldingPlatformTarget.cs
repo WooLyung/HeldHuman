@@ -3,6 +3,7 @@ using HeldHuman.Tool;
 using RimWorld;
 using System;
 using Verse;
+using Verse.AI;
 
 namespace HeldHuman.Patch.CompHoldingPlatformTarget_
 {
@@ -57,6 +58,26 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
                 return false;
             }
             return true;
+        }
+    }
+
+    [HarmonyPatch(typeof(CompHoldingPlatformTarget), "Escape")]
+    [HarmonyPatch(new Type[] { typeof(bool) })]
+    public class Escape_Patch
+    {
+        static void Postfix(ref CompHoldingPlatformTarget __instance, bool initiator)
+        {
+            if (HumanTool.IsHoldableHuman(__instance.parent))
+            {
+                try
+                {
+                    Pawn pawn = (Pawn)__instance.parent;
+                    pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, forced: true);
+                }
+                catch (Exception)
+                {
+                }
+            }
         }
     }
 }
