@@ -62,6 +62,7 @@
     <Compile Include="HeldHumanMod.cs" />
     <Compile Include="Patch\Ability\CompAbilityEffect_BloodfeederBite.cs" />
     <Compile Include="Patch\Base\Bill.cs" />
+    <Compile Include="Patch\Building\Building_SubcoreScanner.cs" />
     <Compile Include="Patch\Building\Building_GeneExtractor.cs" />
     <Compile Include="Patch\Comp\CompPowerPlantElectroharvester.cs" />
     <Compile Include="Patch\Building\Building_HoldingPlatform.cs" />
