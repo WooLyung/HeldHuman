@@ -1,10 +1,9 @@
 ﻿using HarmonyLib;
 using HeldHuman.Tool;
 using RimWorld;
-using System.Linq;
 using System.Reflection;
 using Verse;
-using static HarmonyLib.Code;
+using ModSettings = HeldHuman.Setting.ModSettings;
 
 namespace HeldHuman.Patch.CompStudiable_
 {
@@ -38,18 +37,11 @@ namespace HeldHuman.Patch.CompStudiable_
     {
         static MethodBase TargetMethod() => AccessTools.Method(typeof(CompStudiable), "EverStudiableCached", new[] { typeof(string).MakeByRefType() });
 
-        static bool Prefix(ref CompStudiable __instance, ref bool __result, ref string reason)
+        static void Postfix(ref CompStudiable __instance, ref bool __result, ref string reason)
         {
-            reason = null;
-            if (!HumanTool.IsHoldableHuman(__instance.parent))
-                return true;
-
-            Pawn pawn = (Pawn)__instance.parent;
-            if (!pawn.IsOnHoldingPlatform)
-                return true;
-
-            __result = true;
-            return false;
+            if (!__result && HumanTool.IsHuman(__instance.parent) && __instance.parent.IsOnHoldingPlatform)
+                if (HumanTool.IsCreepJoiner(__instance.parent as Pawn) || ModSettings.Instance.enableStudying)
+                    __result = true;
         }
     }
 }

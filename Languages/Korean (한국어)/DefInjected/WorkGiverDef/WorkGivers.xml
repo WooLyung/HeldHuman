@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <TakeEntityToHoldingPlatform.gerund> 실체 포획</TakeEntityToHoldingPlatform.gerund>
+  <OperateHeldHuman.label>포획된 인간 수술</OperateHeldHuman.label>
+  <OperateHeldHuman.gerund> 수술</OperateHeldHuman.gerund>
+  <OperateHeldHuman.verb>수술</OperateHeldHuman.verb>
+</LanguageData>

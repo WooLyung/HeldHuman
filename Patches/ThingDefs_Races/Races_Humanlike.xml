@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationAdd">
         <xpath>*/ThingDef[defName="Human"]/statBases</xpath>
         <value>
-            <MinimumContainmentStrength>20</MinimumContainmentStrength>
+            <MinimumContainmentStrength>10</MinimumContainmentStrength>
         </value>
     </Operation>
 
@@ -11,7 +11,7 @@
         <xpath>*/ThingDef[defName="Human"]/comps</xpath>
         <value>
             <li Class="CompProperties_HoldingPlatformTarget">
-                <baseEscapeIntervalMtbDays>10</baseEscapeIntervalMtbDays>
+                <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
                 <hasAnimation>true</hasAnimation>
             </li>
             <li Class="CompProperties_ProducesBioferrite">

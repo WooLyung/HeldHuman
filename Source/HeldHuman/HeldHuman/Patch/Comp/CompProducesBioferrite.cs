@@ -13,7 +13,7 @@ namespace HeldHuman.Patch.CompProducesBioferrite_
         static void Postfix(ref float __result, Pawn pawn)
         {
             if (HumanTool.IsMutantHuman(pawn) && pawn.mutant.Def.producesBioferrite)
-                __result = 1.0f;
+                __result = pawn.BodySize * 1.0f;
         }
     }
 }

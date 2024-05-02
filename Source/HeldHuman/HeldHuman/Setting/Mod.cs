@@ -92,11 +92,6 @@ namespace HeldHuman.Setting
                             AccessTools.Field(typeof(CompProperties_Studiable), "requiresHoldingPlatform").SetValue(p, true);
                             AccessTools.Field(typeof(CompProperties_Studiable), "anomalyKnowledge").SetValue(p, settings.anomalyKnowledge);
                         }
-                        else
-                        {
-                            p.frequencyTicks = 0;
-                            AccessTools.Field(typeof(CompProperties_Studiable), "anomalyKnowledge").SetValue(p, 0.0f);
-                        }
                     }
                 }
             }

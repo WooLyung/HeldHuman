@@ -3,7 +3,6 @@ using HeldHuman.Tool;
 using RimWorld;
 using System;
 using Verse;
-using Verse.AI;
 
 namespace HeldHuman.Patch.CompHoldingPlatformTarget_
 {
@@ -12,16 +11,26 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
     {
         static bool Prefix(ref CompHoldingPlatformTarget __instance, ref bool __result)
         {
-            if (!HumanTool.IsHoldableFaction(__instance.parent))
+            if (!__instance.parent.def.race.Humanlike)
                 return true;
+
             Pawn pawn = (Pawn)__instance.parent;
+            if (pawn.IsOnHoldingPlatform)
+            {
+                __result = true;
+                return false;
+            }
+            if (!pawn.Spawned)
+                return true;
+            if (!HumanTool.IsHoldableHuman(pawn))
+                return true;
 
             if (ModsConfig.IdeologyActive && pawn.IsSlaveOfColony || pawn.IsPrisonerOfColony)
             {
                 __result = true;
                 return false;
             }
-            else if (pawn.Faction.HostileTo(Faction.OfPlayer))
+            else if (pawn.HostileTo(Faction.OfPlayer))
             {
                 if (pawn.Downed)
                     __result = pawn.GetComp<CompActivity>()?.IsDormant ?? true;
@@ -50,14 +59,10 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
     [HarmonyPatch(typeof(CompHoldingPlatformTarget), "get_StudiedAtHoldingPlatform")]
     public class StudiedAtHoldingPlatform_Patch
     {
-        static bool Prefix(ref CompHoldingPlatformTarget __instance, ref bool __result)
+        static void Postfix(ref CompHoldingPlatformTarget __instance, ref bool __result)
         {
-            if (HumanTool.IsHoldableHuman(__instance.parent))
-            {
+            if (!__result && HumanTool.IsHoldableHuman(__instance.parent))
                 __result = true;
-                return false;
-            }
-            return true;
         }
     }
 
@@ -67,16 +72,13 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
     {
         static void Postfix(ref CompHoldingPlatformTarget __instance, bool initiator)
         {
+            if (!initiator)
+                return;
+
             if (HumanTool.IsHoldableHuman(__instance.parent))
             {
-                try
-                {
-                    Pawn pawn = (Pawn)__instance.parent;
-                    pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, forced: true);
-                }
-                catch (Exception)
-                {
-                }
+                Pawn pawn = (Pawn)__instance.parent;
+                pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, forced: true);
             }
         }
     }

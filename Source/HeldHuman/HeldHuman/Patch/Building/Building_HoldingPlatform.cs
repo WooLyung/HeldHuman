@@ -11,13 +11,14 @@ namespace HeldHuman.Patch.Building_HoldingPlatform_
     {
         static void Postfix(ref Building_HoldingPlatform __instance, ref AttachPointTracker __result)
         {
-            Pawn pawn = __instance.HeldPawn;
-            if (pawn.HasComp<CompAttachPoints>())
-                return;
-            if (pawn.health.hediffSet.GetHediffComps<HediffComp_AttachPoints>().ToList().Count > 0)
+            if (__result != null)
                 return;
 
-            AttachPointTracker points = null;
+            Pawn pawn = __instance.HeldPawn;
+            if (!HumanTool.IsHoldableHuman(pawn))
+                return;
+
+            AttachPointTracker points = null; 
             if (pawn.Drawer.renderer.CurRotDrawMode == RotDrawMode.Dessicated && pawn.story?.bodyType?.attachPointsDessicated != null)
                 points = new AttachPointTracker(pawn.story.bodyType.attachPointsDessicated, pawn);
             else if (pawn.story?.bodyType?.attachPoints != null)
