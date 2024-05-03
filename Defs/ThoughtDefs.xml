@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThoughtDef>
+    <defName>HeldHuman</defName>
+    <workerClass>HeldHuman.Def.ThoughtWorker_.ThoughtWorker_HeldHuman</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>구속됨 (사소함)</label>
+        <description>사지가 묶여 구속되었어. 난 실체가 아니야.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>구속됨 (심각함)</label>
+        <description>팔과 다리에 아무런 감각도 느껴지지 않아. 얼마나 오랜 시간이 지난거지?</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+      <li>
+        <label>구속됨 (극심함)</label>
+        <description>난 이제 포기했어.</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

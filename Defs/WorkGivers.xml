@@ -3,7 +3,7 @@
     <WorkGiverDef>
         <defName>OperateHeldHuman</defName>
         <label>operate on held humans</label>
-        <giverClass>HeldHuman.Def.WorkGiver.WorkGiver_OperateHeldHuman</giverClass>
+        <giverClass>HeldHuman.Def.WorkGiver_.WorkGiver_OperateHeldHuman</giverClass>
         <workType>Doctor</workType>
         <priorityInType>70</priorityInType>
         <verb>operate on</verb>

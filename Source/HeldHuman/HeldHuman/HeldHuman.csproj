@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Def\JobDriver\JobDriver_HeldHumanBloodfeed.cs" />
     <Compile Include="Def\JobDriver\JobDriver_OperateHeldHuman.cs" />
+    <Compile Include="Def\ThoughtWorker\ThoughtWorker_HeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_OperateHeldHuman.cs" />
     <Compile Include="HeldHumanMod.cs" />
     <Compile Include="Patch\Building\Building_SubcoreScanner.cs" />
