@@ -70,6 +70,8 @@
     <Compile Include="Patch\Comp\CompStudiable.cs" />
     <Compile Include="Patch\Item\HumanEmbryo.cs" />
     <Compile Include="Patch\Base\Pawn.cs" />
+    <Compile Include="Patch\Misc\Need_Food.cs" />
+    <Compile Include="Patch\Misc\ITab_Pawn_Needs.cs" />
     <Compile Include="Transpiler\Thing.cs" />
     <Compile Include="Patch\JobDriver\JobDriver_CarryToBuilding.cs" />
     <Compile Include="Patch\JobGiver\JobGiver_GetHemogen.cs" />
