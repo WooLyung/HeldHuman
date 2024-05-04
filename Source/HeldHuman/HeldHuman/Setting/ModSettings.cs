@@ -11,6 +11,7 @@ namespace HeldHuman.Setting
         public int frequencyTicks;
         public float anomalyKnowledge;
         public int powerFactor;
+        public bool enableFood;
 
         private static ModSettings instance;
         public static ModSettings Instance => instance;
@@ -24,6 +25,7 @@ namespace HeldHuman.Setting
             frequencyTicks = 120000;
             anomalyKnowledge = 0.5f;
             powerFactor = 100;
+            enableFood = false;
         }
 
         public override void ExposeData()
@@ -34,6 +36,7 @@ namespace HeldHuman.Setting
             Scribe_Values.Look(ref frequencyTicks, "heldHuman.frequencyTicks", 120000);
             Scribe_Values.Look(ref anomalyKnowledge, "heldHuman.anomalyKnowledge", 0.5f);
             Scribe_Values.Look(ref powerFactor, "heldHuman.powerFactor", 100);
+            Scribe_Values.Look(ref enableFood, "heldHuman.enableFood", false);
             base.ExposeData();
         }
     }

@@ -11,7 +11,7 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
     {
         static bool Prefix(ref CompHoldingPlatformTarget __instance, ref bool __result)
         {
-            if (!__instance.parent.def.race.Humanlike)
+            if (!__instance?.parent?.def?.race?.Humanlike ?? true)
                 return true;
 
             Pawn pawn = (Pawn)__instance.parent;

@@ -26,7 +26,7 @@ namespace HeldHuman.Setting
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
 
-            listingStandard.Label("- Production & Studying");
+            listingStandard.Label("─── Production & Studying");
             listingStandard.CheckboxLabeled("enable producing bioferrate", ref settings.enableProducingBioferrate);
             settings.bioferriteDensity = listingStandard.SliderLabeled($"bioferrite density ({settings.bioferriteDensity:0.0})", settings.bioferriteDensity, 0.1f, 10.0f);
             listingStandard.Gap(20);
@@ -35,8 +35,12 @@ namespace HeldHuman.Setting
             settings.anomalyKnowledge = listingStandard.SliderLabeled($"anomaly knowledge ({settings.anomalyKnowledge:0.0})", settings.anomalyKnowledge, 0.1f, 10.0f);
             listingStandard.Gap(20);
             settings.powerFactor = (int)listingStandard.SliderLabeled($"power generation factor ({settings.powerFactor}%)", settings.powerFactor, 0, 1000);
-
             listingStandard.GapLine(40);
+
+            listingStandard.Label("─── Needs & DLC");
+            listingStandard.CheckboxLabeled("enable food (need)", ref settings.enableFood);
+            listingStandard.GapLine(40);
+
             if (listingStandard.ButtonText("Reset"))
                 settings.Reset();
             listingStandard.Label("If you have modified the settings, restart the game.");

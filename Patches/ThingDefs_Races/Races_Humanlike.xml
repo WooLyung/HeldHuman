@@ -10,13 +10,9 @@
     <Operation Class="PatchOperationAdd">
         <xpath>*/ThingDef[defName="Human"]/comps</xpath>
         <value>
-            <li Class="CompProperties_HoldingPlatformTarget">
-                <baseEscapeIntervalMtbDays>60</baseEscapeIntervalMtbDays>
-                <hasAnimation>true</hasAnimation>
-            </li>
             <li Class="CompProperties_ProducesBioferrite">
                 <bioferriteDensity>0.5</bioferriteDensity>
             </li>
-        </value>
+        </value> 
     </Operation>
 </Patch>

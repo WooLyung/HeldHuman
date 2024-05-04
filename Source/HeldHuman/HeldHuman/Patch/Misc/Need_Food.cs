@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using HeldHuman.Setting;
 using HeldHuman.Tool;
 using RimWorld;
 using System;
@@ -7,6 +8,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using Verse;
 using Verse.AI;
+using ModSettings = HeldHuman.Setting.ModSettings;
 
 namespace HeldHuman.Patch.Need_Food_
 {
@@ -16,6 +18,9 @@ namespace HeldHuman.Patch.Need_Food_
     {
         static bool Prefix(ref Need_Food __instance, ref float __result, HungerCategory hunger, bool ignoreMalnutrition)
         {
+            if (!ModSettings.Instance.enableFood)
+                return true;
+
             Pawn pawn = (Pawn)AccessTools.Field(typeof(Need), "pawn").GetValue(__instance);
             if (!HumanTool.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
                 return true;
@@ -51,6 +56,9 @@ namespace HeldHuman.Patch.Need_Food_
     {
         static bool Prefix(ref Need_Food __instance, ref bool __result)
         {
+            if (!ModSettings.Instance.enableFood)
+                return true;
+
             Pawn pawn = (Pawn)AccessTools.Field(typeof(Need), "pawn").GetValue(__instance);
 
             if (!HumanTool.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
