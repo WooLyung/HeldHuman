@@ -13,4 +13,11 @@
         <driverClass>HeldHuman.Def.JobDriver_.JobDriver_HeldHumanBloodfeed</driverClass>
         <reportString>feeding on TargetA.</reportString> 
     </JobDef>    
+
+    <JobDef>
+        <defName>FeedHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_.JobDriver_FoodFeedHeldHuman</driverClass>
+        <reportString>feeding TargetA to TargetB.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
 </Defs>

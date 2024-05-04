@@ -15,4 +15,31 @@
         <billGiversAllHumanlikes>true</billGiversAllHumanlikes>
         <billGiversAllHumanlikesCorpses>true</billGiversAllHumanlikesCorpses>
     </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>FeedHeldHuman</defName>
+        <label>feed held humans</label>
+        <giverClass>HeldHuman.Def.WorkGiver_.WorkGiver_FeedHeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>feed</verb>
+        <gerund>feeding</gerund>
+        <priorityInType>80</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+<!--
+    <WorkGiverDef>
+        <defName>ChatWithHeldHuman</defName>
+        <label>chat with held humans</label>
+        <giverClass>HeldHuman.Def.WorkGiver_.WorkGiver_ChatWithHeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>chat with</verb>
+        <gerund>chatting with</gerund>
+        <priorityInType>60</priorityInType>
+        <requiredCapacities>
+            <li>Talking</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+-->
 </Defs>

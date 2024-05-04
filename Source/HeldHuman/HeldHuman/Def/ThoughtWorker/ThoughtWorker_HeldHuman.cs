@@ -19,8 +19,10 @@ namespace HeldHuman.Def.ThoughtWorker_
                 return ThoughtState.ActiveAtStage(0);
             else if (tick <= 60000 * 15) // 15 days
                 return ThoughtState.ActiveAtStage(1);
-            else // 60 days
+            else if (tick <= 60000 * 60) // 60 days
                 return ThoughtState.ActiveAtStage(2);
+            else
+                return ThoughtState.ActiveAtStage(3);
         }
     }
 }

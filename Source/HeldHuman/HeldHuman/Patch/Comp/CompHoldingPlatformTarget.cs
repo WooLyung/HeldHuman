@@ -72,14 +72,14 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
     {
         static void Postfix(ref CompHoldingPlatformTarget __instance, bool initiator)
         {
-            if (!initiator)
+            if (!HumanTool.IsHoldableHuman(__instance.parent))
                 return;
 
-            if (HumanTool.IsHoldableHuman(__instance.parent))
-            {
-                Pawn pawn = (Pawn)__instance.parent;
+            Pawn pawn = (Pawn)__instance.parent;
+            Thought_Memory memory = (Thought_Memory)ThoughtMaker.MakeThought(DefDatabase<ThoughtDef>.GetNamed("HaveBeenHeldHuman"));
+            pawn.needs.mood.thoughts.memories.TryGainMemory(memory);
+            if (initiator)
                 pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, forced: true);
-            }
         }
     }
 }

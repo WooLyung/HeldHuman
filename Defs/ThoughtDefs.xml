@@ -7,19 +7,37 @@
     <developmentalStageFilter>Child, Adult</developmentalStageFilter>
     <stages>
       <li>
-        <label>구속됨 (사소함)</label>
-        <description>사지가 묶여 구속되었어. 난 실체가 아니야.</description>
+        <label>held human</label>
+        <description>I was caught with my limbs tied up.</description>
         <baseMoodEffect>-10</baseMoodEffect>
       </li>
       <li>
-        <label>구속됨 (심각함)</label>
-        <description>팔과 다리에 아무런 감각도 느껴지지 않아. 얼마나 오랜 시간이 지난거지?</description>
+        <label>long-term held human</label>
+        <description>I've been tied up for too long. I can feel nothing.</description>
         <baseMoodEffect>-20</baseMoodEffect>
       </li>
       <li>
-        <label>구속됨 (극심함)</label>
-        <description>난 이제 포기했어.</description>
+        <label>being treated as a entity</label>
+        <description>I'm not a entity.</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+      <li>
+        <label>human-like entity</label>
+        <description>...</description>
         <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>HaveBeenHeldHuman</defName>
+    <durationDays>8</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>have been held</label>
+        <description>I've been held with my limbs tied up like a entity.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

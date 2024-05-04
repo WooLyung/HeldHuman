@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <HeldHuman.stages.0.label>포획됨</HeldHuman.stages.0.label>
+  <HeldHuman.stages.0.description>사지가 묶여 포획되었어.</HeldHuman.stages.0.description>
+  
+  <HeldHuman.stages.1.label>장기간 포획됨</HeldHuman.stages.1.label>
+  <HeldHuman.stages.1.description>너무 오랜 시간이 지났어. 이제 감각이 느껴지지 않아.</HeldHuman.stages.1.description>
+  
+  <HeldHuman.stages.2.label>실체 취급</HeldHuman.stages.2.label>
+  <HeldHuman.stages.2.description>난 실체가 아니야.</HeldHuman.stages.2.description>
+  
+  <HeldHuman.stages.3.label>인간 실체</HeldHuman.stages.3.label>
+  <HeldHuman.stages.3.description>...</HeldHuman.stages.3.description>
+  
+  <HaveBeenHeldHuman.stages.0.label>포획된 적 있음</HaveBeenHeldHuman.stages.0.label>
+  <HaveBeenHeldHuman.stages.0.description>난 실체처럼 팔다리가 묶인 채로 포획되었어.</HaveBeenHeldHuman.stages.0.description>
+</LanguageData>
