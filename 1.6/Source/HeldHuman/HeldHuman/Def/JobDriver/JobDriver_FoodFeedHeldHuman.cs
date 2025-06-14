@@ -5,7 +5,7 @@ using Verse;
 using System;
 using HeldHuman.ToilHelper;
 
-namespace HeldHuman.Def.JobDriver_
+namespace HeldHuman.Def
 {
     public class JobDriver_FoodFeedHeldHuman : JobDriver_FoodFeedPatient
     {

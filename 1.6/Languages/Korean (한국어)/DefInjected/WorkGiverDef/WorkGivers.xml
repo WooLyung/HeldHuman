@@ -3,4 +3,16 @@
   <OperateHeldHuman.label>포획된 인간 수술</OperateHeldHuman.label>
   <OperateHeldHuman.gerund> 수술</OperateHeldHuman.gerund>
   <OperateHeldHuman.verb>수술</OperateHeldHuman.verb>
+  
+  <FeedHeldHuman.label>포획된 인간에게 밥 먹여주기</FeedHeldHuman.label>
+  <FeedHeldHuman.gerund>에게 밥 먹여주기</FeedHeldHuman.gerund>
+  <FeedHeldHuman.verb>밥 먹여주기</FeedHeldHuman.verb>
+  
+  <ReleaseHeldHuman.label>포획된 인간 석방</ReleaseHeldHuman.label>
+  <ReleaseHeldHuman.gerund> 석방</ReleaseHeldHuman.gerund>
+  <ReleaseHeldHuman.verb>석방</ReleaseHeldHuman.verb>
+  
+  <ExecuteHeldHuman.label>포획된 인간 처형</ExecuteHeldHuman.label>
+  <ExecuteHeldHuman.gerund> 처형</ExecuteHeldHuman.gerund>
+  <ExecuteHeldHuman.verb>처형</ExecuteHeldHuman.verb>
 </LanguageData>

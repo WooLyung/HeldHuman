@@ -2,7 +2,7 @@
 <Defs>
   <ThoughtDef>
     <defName>HeldHuman</defName>
-    <workerClass>HeldHuman.Def.ThoughtWorker_.ThoughtWorker_HeldHuman</workerClass>
+    <workerClass>HeldHuman.Def.ThoughtWorker_HeldHuman</workerClass>
     <validWhileDespawned>true</validWhileDespawned>
     <developmentalStageFilter>Child, Adult</developmentalStageFilter>
     <stages>

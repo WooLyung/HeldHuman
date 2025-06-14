@@ -1,7 +1,6 @@
 ﻿using HarmonyLib;
 using HeldHuman.Tool;
 using RimWorld;
-using System;
 using Verse;
 
 namespace HeldHuman.Patch.Need_Rest_

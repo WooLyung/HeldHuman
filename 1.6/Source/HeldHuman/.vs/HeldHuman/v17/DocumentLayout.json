@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\patch\\need\\need_rest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\patch\\need\\need_rest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\def\\workgiver\\workgiver_executeheldhuman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\def\\workgiver\\workgiver_executeheldhuman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\def\\workgiver\\workgiver_releaseheldhuman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\def\\workgiver\\workgiver_releaseheldhuman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Need_Rest.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Patch\\Need\\Need_Rest.cs",
-              "RelativeDocumentMoniker": "HeldHuman\\Patch\\Need\\Need_Rest.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Patch\\Need\\Need_Rest.cs",
-              "RelativeToolTip": "HeldHuman\\Patch\\Need\\Need_Rest.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowCEAAAAZAAAA",
+              "Title": "WorkGiver_ExecuteHeldHuman.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\WorkGiver\\WorkGiver_ExecuteHeldHuman.cs",
+              "RelativeDocumentMoniker": "HeldHuman\\Def\\WorkGiver\\WorkGiver_ExecuteHeldHuman.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\WorkGiver\\WorkGiver_ExecuteHeldHuman.cs",
+              "RelativeToolTip": "HeldHuman\\Def\\WorkGiver\\WorkGiver_ExecuteHeldHuman.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T01:51:44.816Z",
+              "WhenOpened": "2025-06-14T02:45:55.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WorkGiver_ReleaseHeldHuman.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\WorkGiver\\WorkGiver_ReleaseHeldHuman.cs",
+              "RelativeDocumentMoniker": "HeldHuman\\Def\\WorkGiver\\WorkGiver_ReleaseHeldHuman.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\WorkGiver\\WorkGiver_ReleaseHeldHuman.cs",
+              "RelativeToolTip": "HeldHuman\\Def\\WorkGiver\\WorkGiver_ReleaseHeldHuman.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T02:42:18.28Z",
               "EditorCaption": ""
             }
           ]

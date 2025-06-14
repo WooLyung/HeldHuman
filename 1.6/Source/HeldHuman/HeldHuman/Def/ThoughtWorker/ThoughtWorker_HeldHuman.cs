@@ -3,7 +3,7 @@ using HeldHuman.Tool;
 using RimWorld;
 using Verse;
 
-namespace HeldHuman.Def.ThoughtWorker_
+namespace HeldHuman.Def
 {
     public class ThoughtWorker_HeldHuman : ThoughtWorker
     {

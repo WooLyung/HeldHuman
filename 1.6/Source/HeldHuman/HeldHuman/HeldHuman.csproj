@@ -57,12 +57,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Def\JobDriver\JobDriver_ReleaseHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_FoodFeedHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_BloodfeedHeldHuman.cs" />
+    <Compile Include="Def\JobDriver\JobDriver_ExecuteHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_OperateHeldHuman.cs" />
     <Compile Include="Def\ThoughtWorker\ThoughtWorker_HeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_FeedHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_OperateHeldHuman.cs" />
+    <Compile Include="Def\WorkGiver\WorkGiver_ExecuteHeldHuman.cs" />
+    <Compile Include="Def\WorkGiver\WorkGiver_ReleaseHeldHuman.cs" />
     <Compile Include="HeldHumanMod.cs" />
     <Compile Include="Patch\Building\Building_SubcoreScanner.cs" />
     <Compile Include="Patch\Building\Building_GeneExtractor.cs" />

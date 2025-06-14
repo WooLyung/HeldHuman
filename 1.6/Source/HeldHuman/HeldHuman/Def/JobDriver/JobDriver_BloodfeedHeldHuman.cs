@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using Verse.AI;
 using Verse;
-using Unity.Jobs;
 using HeldHuman.Tool;
 
-namespace HeldHuman.Def.JobDriver_
+namespace HeldHuman.Def
 {
     public class JobDriver_BloodfeedHeldHuman : JobDriver
     {

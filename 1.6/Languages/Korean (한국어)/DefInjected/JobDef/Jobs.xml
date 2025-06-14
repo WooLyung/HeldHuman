@@ -3,4 +3,6 @@
   <OperateHeldHuman.reportString>TargetB을 TargetA로 수술하는 중</OperateHeldHuman.reportString>
   <BloodfeedHeldHuman.reportString>TargetB에게 먹여주는 중</BloodfeedHeldHuman.reportString>
   <FeedHeldHuman.reportString>TargetB에게 TargetA 먹여주는 중</FeedHeldHuman.reportString>
+  <ExecuteHeldHuman.reportString>TargetA 처형 중</ExecuteHeldHuman.reportString>
+  <ReleaseHeldHuman.reportString>TargetB 석방 중</ReleaseHeldHuman.reportString>
 </LanguageData>

@@ -28,6 +28,32 @@
             <li>Manipulation</li>
         </requiredCapacities>
     </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>ReleaseHeldHuman</defName>
+        <label>release held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_ReleaseHeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>release</verb>
+        <gerund>releasing</gerund>
+        <priorityInType>65</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>ExecuteHeldHuman</defName>
+        <label>execute held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_ExecuteHeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>execute</verb>
+        <gerund>executing</gerund>
+        <priorityInType>115</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
 <!--
     <WorkGiverDef>
         <defName>ChatWithHeldHuman</defName>
