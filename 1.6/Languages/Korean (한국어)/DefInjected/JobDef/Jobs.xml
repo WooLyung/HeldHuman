@@ -6,4 +6,5 @@
 	<ExecuteHeldHuman.reportString>TargetA 처형 중</ExecuteHeldHuman.reportString>
 	<ReleaseHeldHuman.reportString>TargetB 석방 중</ReleaseHeldHuman.reportString>
 	<StripHeldHuman.reportString>TargetA 벗기는 중</StripHeldHuman.reportString>
+	<HeldHumanAttemptRecruit.reportString>TargetA 포섭 중</HeldHumanAttemptRecruit.reportString>
 </LanguageData>

@@ -42,4 +42,11 @@
         <taleOnCompletion>Stripped</taleOnCompletion>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
+
+    <JobDef>
+        <defName>HeldHumanAttemptRecruit</defName>
+        <driverClass>HeldHuman.Def.JobDriver_ChatWithHeldHuman</driverClass>
+        <reportString>attempting to recruit TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>    
 </Defs>

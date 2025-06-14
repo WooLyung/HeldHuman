@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Def\JobDriver\JobDriver_ChatWithHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_StripHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_ReleaseHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_FoodFeedHeldHuman.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Def\JobDriver\JobDriver_OperateHeldHuman.cs" />
     <Compile Include="Def\ThoughtWorker\ThoughtWorker_HeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_FeedHeldHuman.cs" />
+    <Compile Include="Def\WorkGiver\WorkGiver_HeldHuman_Chat.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_OperateHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_ExecuteHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_StripHeldHuman.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Patch\Need\Need_Food.cs" />
     <Compile Include="Patch\Need\ITab_Pawn_Needs.cs" />
     <Compile Include="Patch\Need\Need_Outdoors.cs" />
+    <Compile Include="Patch\Tracker\Pawn_InteractionsTracker.cs" />
     <Compile Include="Transpiler\Thing.cs" />
     <Compile Include="Patch\JobDriver\JobDriver_CarryToBuilding.cs" />
     <Compile Include="Patch\JobGiver\JobGiver_GetHemogen.cs" />

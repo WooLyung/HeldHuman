@@ -5,7 +5,7 @@ using System;
 using Verse;
 using Verse.AI;
 
-namespace HeldHuman.Def.WorkGiver_
+namespace HeldHuman.Def
 {
     public class WorkGiver_OperateHeldHuman : WorkGiver_DoBill
     {

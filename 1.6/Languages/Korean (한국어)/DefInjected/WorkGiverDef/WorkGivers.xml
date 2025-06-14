@@ -19,4 +19,8 @@
 	<StripHeldHuman.label>포획된 인간 벗기기</StripHeldHuman.label>
 	<StripHeldHuman.gerund> 벗기기</StripHeldHuman.gerund>
 	<StripHeldHuman.verb>벗기기</StripHeldHuman.verb>
+		
+	<ChatWithHeldHuman.label>포획된 인간과 대화</ChatWithHeldHuman.label>
+	<ChatWithHeldHuman.gerund>(와)과 대화</ChatWithHeldHuman.gerund>
+	<ChatWithHeldHuman.verb>대화</ChatWithHeldHuman.verb>
 </LanguageData>

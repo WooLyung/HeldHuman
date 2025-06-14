@@ -3,7 +3,7 @@
     <WorkGiverDef>
         <defName>OperateHeldHuman</defName>
         <label>operate on held humans</label>
-        <giverClass>HeldHuman.Def.WorkGiver_.WorkGiver_OperateHeldHuman</giverClass>
+        <giverClass>HeldHuman.Def.WorkGiver_OperateHeldHuman</giverClass>
         <workType>Doctor</workType>
         <priorityInType>70</priorityInType>
         <verb>operate on</verb>
@@ -19,7 +19,7 @@
     <WorkGiverDef>
         <defName>FeedHeldHuman</defName>
         <label>feed held humans</label>
-        <giverClass>HeldHuman.Def.WorkGiver_.WorkGiver_FeedHeldHuman</giverClass>
+        <giverClass>HeldHuman.Def.WorkGiver_FeedHeldHuman</giverClass>
         <workType>Warden</workType>
         <verb>feed</verb>
         <gerund>feeding</gerund>
@@ -69,11 +69,10 @@
         <canBeDoneByMechs>false</canBeDoneByMechs>
     </WorkGiverDef>
 
-<!--
     <WorkGiverDef>
         <defName>ChatWithHeldHuman</defName>
-        <label>chat with held humans</label>
-        <giverClass>HeldHuman.Def.WorkGiver_.WorkGiver_ChatWithHeldHuman</giverClass>
+        <label>chat with held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_HeldHuman_Chat</giverClass>
         <workType>Warden</workType>
         <verb>chat with</verb>
         <gerund>chatting with</gerund>
@@ -82,5 +81,4 @@
             <li>Talking</li>
         </requiredCapacities>
     </WorkGiverDef>
--->
 </Defs>

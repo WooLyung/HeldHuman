@@ -92,5 +92,21 @@ namespace HeldHuman.ToilHelper
             };
             return toil;
         }
+
+        public static Toil TryRecruit(TargetIndex recruiteeInd)
+        {
+            Toil toil = ToilMaker.MakeToil("TryRecruit");
+            toil.initAction = delegate
+            {
+                Pawn actor = toil.actor;
+                Pawn pawn = (Pawn)actor.jobs.curJob.GetTarget(recruiteeInd).Thing;
+                actor.interactions.TryInteractWith(pawn, InteractionDefOf.RecruitAttempt);
+            };
+            toil.socialMode = RandomSocialMode.Off;
+            toil.defaultCompleteMode = ToilCompleteMode.Delay;
+            toil.defaultDuration = 350;
+            toil.activeSkill = () => SkillDefOf.Social;
+            return toil;
+        }
     }
 }

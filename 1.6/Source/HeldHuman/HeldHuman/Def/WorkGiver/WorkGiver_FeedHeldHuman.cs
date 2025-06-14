@@ -3,7 +3,7 @@ using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace HeldHuman.Def.WorkGiver_
+namespace HeldHuman.Def
 {
     public class WorkGiver_FeedHeldHuman : WorkGiver_Warden_Feed
     {
