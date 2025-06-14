@@ -76,10 +76,19 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
                 return;
 
             Pawn pawn = (Pawn)__instance.parent;
-            Thought_Memory memory = (Thought_Memory)ThoughtMaker.MakeThought(DefDatabase<ThoughtDef>.GetNamed("HaveBeenHeldHuman"));
-            pawn.needs.mood.thoughts.memories.TryGainMemory(memory);
             if (initiator)
                 pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.Berserk, forced: true);
+        }
+    }
+
+    [HarmonyPatch(typeof(CompHoldingPlatformTarget), "Notify_ReleasedFromPlatform")]
+    public class Notify_ReleasedFromPlatform_Patch
+    {
+        static void Postfix(ref CompHoldingPlatformTarget __instance)
+        {
+            Pawn pawn = (Pawn)__instance.parent;
+            Thought_Memory memory = (Thought_Memory)ThoughtMaker.MakeThought(DefDatabase<ThoughtDef>.GetNamed("HaveBeenHeldHuman"));
+            pawn.needs.mood.thoughts.memories.TryGainMemory(memory);
         }
     }
 }

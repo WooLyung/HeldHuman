@@ -31,13 +31,13 @@
 
   <ThoughtDef>
     <defName>HaveBeenHeldHuman</defName>
-    <durationDays>8</durationDays>
+    <durationDays>15</durationDays>
     <stackLimit>1</stackLimit>
     <stages>
       <li>
         <label>have been held</label>
         <description>I've been held with my limbs tied up like a entity.</description>
-        <baseMoodEffect>-8</baseMoodEffect>
+        <baseMoodEffect>-10</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

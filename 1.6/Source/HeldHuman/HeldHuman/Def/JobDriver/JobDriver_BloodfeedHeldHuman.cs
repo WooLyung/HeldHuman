@@ -28,7 +28,7 @@ namespace HeldHuman.Def.JobDriver_
             yield return Toils_General.WaitWith(TargetIndex.A, 120, useProgressBar: true).PlaySustainerOrSound(SoundDefOf.Bloodfeed_Cast);
             yield return Toils_General.Do(delegate
             {
-                SanguophageUtility.DoBite(pawn, Pawn, 0.2f, 0.1f, 0.4499f, 1f, IntRange.one, ThoughtDefOf.FedOn, ThoughtDefOf.FedOn_Social);
+                SanguophageUtility.DoBite(pawn, Pawn, 0.2f, 0.1f, 0.4499f, 1f, new IntRange(1, 1), ThoughtDefOf.FedOn, ThoughtDefOf.FedOn_Social);
             });
         }
     }

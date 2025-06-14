@@ -1,13 +1,8 @@
 ﻿using HarmonyLib;
-using HeldHuman.Setting;
 using HeldHuman.Tool;
 using RimWorld;
 using System;
-using System.Linq;
-using System.Reflection;
-using System.Security.Cryptography;
 using Verse;
-using Verse.AI;
 using ModSettings = HeldHuman.Setting.ModSettings;
 
 namespace HeldHuman.Patch.Need_Food_
