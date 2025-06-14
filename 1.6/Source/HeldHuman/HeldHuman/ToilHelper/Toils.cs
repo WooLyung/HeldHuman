@@ -101,6 +101,12 @@ namespace HeldHuman.ToilHelper
                 Pawn actor = toil.actor;
                 Pawn pawn = (Pawn)actor.jobs.curJob.GetTarget(recruiteeInd).Thing;
                 actor.interactions.TryInteractWith(pawn, InteractionDefOf.RecruitAttempt);
+
+                if (pawn.IsColonist && pawn.IsOnHoldingPlatform)
+                {
+                    var platform = pawn.ParentHolder as Building_HoldingPlatform;
+                    platform.EjectContents();
+                }
             };
             toil.socialMode = RandomSocialMode.Off;
             toil.defaultCompleteMode = ToilCompleteMode.Delay;

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\def\\jobdriver\\jobdriver_chatwithheldhuman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\def\\jobdriver\\jobdriver_chatwithheldhuman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\toilhelper\\toils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\toilhelper\\toils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\patch\\tracker\\pawn_interactionstracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\patch\\tracker\\pawn_interactionstracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\def\\jobdriver\\jobdriver_chatwithheldhuman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\def\\jobdriver\\jobdriver_chatwithheldhuman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "JobDriver_ChatWithHeldHuman.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\JobDriver\\JobDriver_ChatWithHeldHuman.cs",
-              "RelativeDocumentMoniker": "HeldHuman\\Def\\JobDriver\\JobDriver_ChatWithHeldHuman.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\JobDriver\\JobDriver_ChatWithHeldHuman.cs",
-              "RelativeToolTip": "HeldHuman\\Def\\JobDriver\\JobDriver_ChatWithHeldHuman.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T05:12:00.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Pawn_InteractionsTracker.cs",
-              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Patch\\Tracker\\Pawn_InteractionsTracker.cs",
-              "RelativeDocumentMoniker": "HeldHuman\\Patch\\Tracker\\Pawn_InteractionsTracker.cs",
-              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Patch\\Tracker\\Pawn_InteractionsTracker.cs",
-              "RelativeToolTip": "HeldHuman\\Patch\\Tracker\\Pawn_InteractionsTracker.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T05:09:02.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Toils.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\ToilHelper\\Toils.cs",
               "RelativeDocumentMoniker": "HeldHuman\\ToilHelper\\Toils.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\ToilHelper\\Toils.cs",
               "RelativeToolTip": "HeldHuman\\ToilHelper\\Toils.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAYwGYAAAAyAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAewGgAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-14T05:07:09.53Z",
+              "WhenOpened": "2025-06-14T05:46:48.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JobDriver_ChatWithHeldHuman.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\JobDriver\\JobDriver_ChatWithHeldHuman.cs",
+              "RelativeDocumentMoniker": "HeldHuman\\Def\\JobDriver\\JobDriver_ChatWithHeldHuman.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\JobDriver\\JobDriver_ChatWithHeldHuman.cs",
+              "RelativeToolTip": "HeldHuman\\Def\\JobDriver\\JobDriver_ChatWithHeldHuman.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwBUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T05:12:50.461Z",
               "EditorCaption": ""
             }
           ]
