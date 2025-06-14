@@ -39,5 +39,11 @@ namespace HeldHuman.Def.WorkGiver_
 
             return job;
         }
+
+        public override string PostProcessedGerund(Job job)
+        {
+            Thing target = job.targetA.Thing;
+            return "DoWorkAtThing".Translate(def.gerund.Named("GERUND"), target.LabelShort.Named("TARGETLABEL"));
+        }
     }
 }

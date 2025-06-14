@@ -54,6 +54,21 @@
             <li>Manipulation</li>
         </requiredCapacities>
     </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>StripHeldHuman</defName>
+        <label>strip held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_StripHeldHuman</giverClass>
+        <workType>Hauling</workType>
+        <verb>strip</verb>
+        <gerund>stripping</gerund>
+        <priorityInType>100</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+    </WorkGiverDef>
+
 <!--
     <WorkGiverDef>
         <defName>ChatWithHeldHuman</defName>

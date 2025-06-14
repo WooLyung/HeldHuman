@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Def\JobDriver\JobDriver_StripHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_ReleaseHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_FoodFeedHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_BloodfeedHeldHuman.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Def\WorkGiver\WorkGiver_FeedHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_OperateHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_ExecuteHeldHuman.cs" />
+    <Compile Include="Def\WorkGiver\WorkGiver_StripHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_ReleaseHeldHuman.cs" />
     <Compile Include="HeldHumanMod.cs" />
     <Compile Include="Patch\Building\Building_SubcoreScanner.cs" />

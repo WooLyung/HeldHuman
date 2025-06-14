@@ -34,4 +34,12 @@
         <reportString>releasing TargetB</reportString>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
+
+    <JobDef>
+        <defName>StripHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_StripHeldHuman</driverClass>
+        <reportString>stripping TargetA.</reportString>
+        <taleOnCompletion>Stripped</taleOnCompletion>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
 </Defs>
