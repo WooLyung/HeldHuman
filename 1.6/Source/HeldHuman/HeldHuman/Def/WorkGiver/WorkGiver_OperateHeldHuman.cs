@@ -34,6 +34,9 @@ namespace HeldHuman.Def.WorkGiver_
             if (job != null)
                 job.def = DefDatabase<JobDef>.GetNamed("OperateHeldHuman");
 
+            if (!job.TryMakePreToilReservations(pawn, false))
+                return null;
+
             return job;
         }
     }

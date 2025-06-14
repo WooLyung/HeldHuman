@@ -34,9 +34,11 @@ namespace HeldHuman.Def.WorkGiver_
                 }
             }
 
-            if (!FoodUtility.TryFindBestFoodSourceFor(pawn, target, target.needs.food.CurCategory == HungerCategory.Starving, out var foodSource, out var foodDef, canRefillDispenser: false, canUseInventory: true, canUsePackAnimalInventory: false, allowForbidden: false, allowCorpse: false))
+            Thing foodSource;
+            ThingDef foodDef;
+            if (!FoodUtility.TryFindBestFoodSourceFor(pawn, target, target.needs.food.CurCategory == HungerCategory.Starving, out foodSource, out foodDef, false, allowCorpse: false))
             {
-                JobFailReason.Is("NoFood".Translate());
+                JobFailReason.Is((string)"NoFood".Translate());
                 return null;
             }
 
@@ -46,6 +48,10 @@ namespace HeldHuman.Def.WorkGiver_
             float nutrition = FoodUtility.GetNutrition(target, foodSource, foodDef);
             Job job = JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("FeedHeldHuman"), foodSource, target);
             job.count = FoodUtility.WillIngestStackCountOf(target, foodDef, nutrition);
+
+            if (!job.TryMakePreToilReservations(pawn, false))
+                return null;
+
             return job;
         }
     }
