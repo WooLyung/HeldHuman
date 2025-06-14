@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <JobDef>
+        <defName>OperateHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_.JobDriver_OperateHeldHuman</driverClass>
+        <reportString>operating on TargetB by TargetA.</reportString>
+        <casualInterruptible>false</casualInterruptible>
+        <suspendable>false</suspendable>
+    </JobDef>
+
+    <JobDef>
+        <defName>BloodfeedHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_.JobDriver_BloodfeedHeldHuman</driverClass>
+        <reportString>feeding on TargetA.</reportString> 
+    </JobDef>    
+
+    <JobDef>
+        <defName>FeedHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_.JobDriver_FoodFeedHeldHuman</driverClass>
+        <reportString>feeding TargetA to TargetB.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+</Defs>

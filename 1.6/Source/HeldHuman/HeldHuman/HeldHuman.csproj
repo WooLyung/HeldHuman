@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HeldHuman</RootNamespace>
+    <AssemblyName>HeldHuman</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Def\JobDriver\JobDriver_FoodFeedHeldHuman.cs" />
+    <Compile Include="Def\JobDriver\JobDriver_BloodfeedHeldHuman.cs" />
+    <Compile Include="Def\JobDriver\JobDriver_OperateHeldHuman.cs" />
+    <Compile Include="Def\ThoughtWorker\ThoughtWorker_HeldHuman.cs" />
+    <Compile Include="Def\WorkGiver\WorkGiver_FeedHeldHuman.cs" />
+    <Compile Include="Def\WorkGiver\WorkGiver_OperateHeldHuman.cs" />
+    <Compile Include="HeldHumanMod.cs" />
+    <Compile Include="Patch\Building\Building_SubcoreScanner.cs" />
+    <Compile Include="Patch\Building\Building_GeneExtractor.cs" />
+    <Compile Include="Patch\Comp\CompPowerPlantElectroharvester.cs" />
+    <Compile Include="Patch\Building\Building_HoldingPlatform.cs" />
+    <Compile Include="Patch\Comp\CompHoldingPlatformTarget.cs" />
+    <Compile Include="Patch\Comp\CompProducesBioferrite.cs" />
+    <Compile Include="Patch\Comp\CompStudiable.cs" />
+    <Compile Include="Patch\Item\HumanEmbryo.cs" />
+    <Compile Include="Patch\Base\Pawn.cs" />
+    <Compile Include="Patch\Misc\Need_Food.cs" />
+    <Compile Include="Patch\Misc\ITab_Pawn_Needs.cs" />
+    <Compile Include="Transpiler\Thing.cs" />
+    <Compile Include="Patch\JobDriver\JobDriver_CarryToBuilding.cs" />
+    <Compile Include="Patch\JobGiver\JobGiver_GetHemogen.cs" />
+    <Compile Include="Setting\Mod.cs" />
+    <Compile Include="Setting\ModSettings.cs" />
+    <Compile Include="ToilHelper\ToilFails.cs" />
+    <Compile Include="ToilHelper\Toils.cs" />
+    <Compile Include="Tool\HumanTool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tool\PlatformTool.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

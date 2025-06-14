@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <heldHumanSetting.Label.ProductionStuding>────── Production &amp; Studying</heldHumanSetting.Label.ProductionStuding>
+    <heldHumanSetting.Label.NeedsDLC>────── Needs &amp; DLC</heldHumanSetting.Label.NeedsDLC>
+    <heldHumanSetting.Label.Restart>If you have modified the settings, restart the game.</heldHumanSetting.Label.Restart>
+
+    <heldHumanSetting.Button.Reset>Reset</heldHumanSetting.Button.Reset>
+
+    <heldHumanSetting.Checkbox.EnableBioferrite>enable producing bioferrite</heldHumanSetting.Checkbox.EnableBioferrite>
+    <heldHumanSetting.Checkbox.EnableStudying>enable studying</heldHumanSetting.Checkbox.EnableStudying>
+    <heldHumanSetting.Checkbox.EnableFood>enable food</heldHumanSetting.Checkbox.EnableFood>
+
+    <heldHumanSetting.Slider.BioferriteDensity>bioferrite density ({0})</heldHumanSetting.Slider.BioferriteDensity>
+    <heldHumanSetting.Slider.FrequencyTicks>research frequency ({0} ticks)</heldHumanSetting.Slider.FrequencyTicks>
+    <heldHumanSetting.Slider.AnomalyKnowledge>anomaly knowledge ({0})</heldHumanSetting.Slider.AnomalyKnowledge>
+    <heldHumanSetting.Slider.PowerGenerationFactor>power generation factor ({0}%)</heldHumanSetting.Slider.PowerGenerationFactor>
+</LanguageData>

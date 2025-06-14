@@ -1,0 +1,12 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\Assemblies\HeldHuman.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\Assemblies\HeldHuman.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\Source\HeldHuman\HeldHuman\obj\Debug\HeldHuman.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\Source\HeldHuman\HeldHuman\obj\Debug\HeldHuman.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\Source\HeldHuman\HeldHuman\obj\Debug\HeldHuman.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\Source\HeldHuman\HeldHuman\obj\Debug\HeldHuman.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\1.6\Assemblies\HeldHuman.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\1.6\Assemblies\HeldHuman.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\1.6\Source\HeldHuman\HeldHuman\obj\Debug\HeldHuman.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\1.6\Source\HeldHuman\HeldHuman\obj\Debug\HeldHuman.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\1.6\Source\HeldHuman\HeldHuman\obj\Debug\HeldHuman.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\HeldHuman\1.6\Source\HeldHuman\HeldHuman\obj\Debug\HeldHuman.pdb

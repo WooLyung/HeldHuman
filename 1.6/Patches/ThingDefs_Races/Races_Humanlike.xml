@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Human"]/statBases</xpath>
+        <value>
+            <MinimumContainmentStrength>10</MinimumContainmentStrength>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/ThingDef[defName="Human"]/comps</xpath>
+        <value>
+            <li Class="CompProperties_ProducesBioferrite">
+                <bioferriteDensity>0.5</bioferriteDensity>
+            </li>
+        </value> 
+    </Operation>
+</Patch>

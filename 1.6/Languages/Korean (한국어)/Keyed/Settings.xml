@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <heldHumanSetting.Label.ProductionStuding>────── 생산 &amp; 연구</heldHumanSetting.Label.ProductionStuding>
+    <heldHumanSetting.Label.NeedsDLC>────── 필요 &amp; DLC</heldHumanSetting.Label.NeedsDLC>
+    <heldHumanSetting.Label.Restart>만약 설정을 바꿨다면 게임을 재시작하세요.</heldHumanSetting.Label.Restart>
+
+    <heldHumanSetting.Button.Reset>초기화</heldHumanSetting.Button.Reset>
+
+    <heldHumanSetting.Checkbox.EnableBioferrite>생체강 생산 활성화</heldHumanSetting.Checkbox.EnableBioferrite>
+    <heldHumanSetting.Checkbox.EnableStudying>연구 활성화</heldHumanSetting.Checkbox.EnableStudying>
+    <heldHumanSetting.Checkbox.EnableFood>허기 활성화</heldHumanSetting.Checkbox.EnableFood>
+
+    <heldHumanSetting.Slider.BioferriteDensity>생체강 밀도 ({0})</heldHumanSetting.Slider.BioferriteDensity>
+    <heldHumanSetting.Slider.FrequencyTicks>연구 주기 ({0}틱)</heldHumanSetting.Slider.FrequencyTicks>
+    <heldHumanSetting.Slider.AnomalyKnowledge>이상 현상 지식 ({0})</heldHumanSetting.Slider.AnomalyKnowledge>
+    <heldHumanSetting.Slider.PowerGenerationFactor>전력 생산 계수 ({0}%)</heldHumanSetting.Slider.PowerGenerationFactor>
+</LanguageData>
