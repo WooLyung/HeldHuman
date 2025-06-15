@@ -41,7 +41,7 @@ namespace HeldHuman.Patch.Need_Food_
                 num *= GeneTuning.MetabolismToFoodConsumptionFactorCurve.Evaluate(num2);
             }
 
-            __result = num;
+            __result = num * 0.75f;
             return false;
         }
     }

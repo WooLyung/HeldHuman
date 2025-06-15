@@ -1,5 +1,4 @@
-﻿using System.Runtime;
-using Verse;
+﻿using Verse;
 
 namespace HeldHuman.Setting
 {
@@ -25,7 +24,7 @@ namespace HeldHuman.Setting
             frequencyTicks = 120000;
             anomalyKnowledge = 0.5f;
             powerFactor = 100;
-            enableFood = false;
+            enableFood = true;
         }
 
         public override void ExposeData()
@@ -36,7 +35,7 @@ namespace HeldHuman.Setting
             Scribe_Values.Look(ref frequencyTicks, "heldHuman.frequencyTicks", 120000);
             Scribe_Values.Look(ref anomalyKnowledge, "heldHuman.anomalyKnowledge", 0.5f);
             Scribe_Values.Look(ref powerFactor, "heldHuman.powerFactor", 100);
-            Scribe_Values.Look(ref enableFood, "heldHuman.enableFood", false);
+            Scribe_Values.Look(ref enableFood, "heldHuman.enableFood", true);
             base.ExposeData();
         }
     }
