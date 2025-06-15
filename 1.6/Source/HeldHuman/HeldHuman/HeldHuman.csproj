@@ -58,15 +58,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Def\JobDriver\JobDriver_ChatWithHeldHuman.cs" />
-    <Compile Include="Def\JobDriver\JobDriver_StripHuman.cs" />
+    <Compile Include="Def\JobDriver\JobDriver_ConvertHeldHuman.cs" />
+    <Compile Include="Def\JobDriver\JobDriver_EnslaveOrReduceWillHeldHuman.cs" />
+    <Compile Include="Def\JobDriver\JobDriver_StripHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_ReleaseHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_FoodFeedHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_BloodfeedHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_ExecuteHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_OperateHeldHuman.cs" />
+    <Compile Include="Def\InteractionWorker\InteractionWorker_ConvertIdeoAttempt_HeldHuman.cs" />
     <Compile Include="Def\ThoughtWorker\ThoughtWorker_HeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_FeedHeldHuman.cs" />
-    <Compile Include="Def\WorkGiver\WorkGiver_HeldHuman_Chat.cs" />
+    <Compile Include="Def\WorkGiver\WorkGiver_Warden_Convert_HeldHuman.cs" />
+    <Compile Include="Def\WorkGiver\WorkGiver_Warden_Enslave_HeldHuman.cs" />
+    <Compile Include="Def\WorkGiver\WorkGiver_Warden_Chat_HeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_OperateHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_ExecuteHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_StripHeldHuman.cs" />

@@ -7,4 +7,7 @@
 	<ReleaseHeldHuman.reportString>TargetB 석방 중</ReleaseHeldHuman.reportString>
 	<StripHeldHuman.reportString>TargetA 벗기는 중</StripHeldHuman.reportString>
 	<HeldHumanAttemptRecruit.reportString>TargetA 포섭 중</HeldHumanAttemptRecruit.reportString>
+	<HeldHumanEnslave.reportString>{TargetA}(을)를 노예로 삼는 중</HeldHumanEnslave.reportString>
+	<HeldHumanReduceWill.reportString>{TargetA}의 의지 꺾는 중</HeldHumanReduceWill.reportString>
+	<HeldHumanConvert.reportString>{TargetA} 교화 중</HeldHumanConvert.reportString>
 </LanguageData>

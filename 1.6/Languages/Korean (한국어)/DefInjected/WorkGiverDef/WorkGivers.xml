@@ -23,4 +23,12 @@
 	<ChatWithHeldHuman.label>포획된 인간과 대화</ChatWithHeldHuman.label>
 	<ChatWithHeldHuman.gerund>(와)과 대화</ChatWithHeldHuman.gerund>
 	<ChatWithHeldHuman.verb>대화</ChatWithHeldHuman.verb>
+
+	<EnslaveHeldHuman.label>포획된 인간 노예화</EnslaveHeldHuman.label>
+	<EnslaveHeldHuman.gerund> 노예화</EnslaveHeldHuman.gerund>
+	<EnslaveHeldHuman.verb>노예화</EnslaveHeldHuman.verb>
+
+	<ConvertHeldHuman.label>포획된 인간 교화</ConvertHeldHuman.label>
+	<ConvertHeldHuman.gerund> 교화</ConvertHeldHuman.gerund>
+	<ConvertHeldHuman.verb>교화</ConvertHeldHuman.verb>
 </LanguageData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <InteractionDef MayRequire="Ludeon.RimWorld.ideology">
+    <defName>ConvertIdeoAttemptHeldHuman</defName>
+    <label>convert ideoligion attempt</label>
+    <workerClass>HeldHuman.Def.InteractionWorker_ConvertIdeoAttempt_HeldHuman</workerClass>
+    <symbolSource>InitiatorIdeo</symbolSource>
+        <logRulesInitiator>
+            <rulesStrings>
+            <li>r_logentry->[INITIATOR_nameDef] tried to convert [RECIPIENT_nameDef] to [INITIATOR_possessive] own ideoligion.</li>
+            </rulesStrings>
+        </logRulesInitiator>
+    </InteractionDef>
+</Defs>

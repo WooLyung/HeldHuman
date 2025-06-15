@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <heldHumanSetting.Label.ProductionStuding>────── Production &amp; Studying</heldHumanSetting.Label.ProductionStuding>
-    <heldHumanSetting.Label.NeedsDLC>────── Needs &amp; DLC</heldHumanSetting.Label.NeedsDLC>
+    <heldHumanSetting.Label.ProductionStuding>──── Production &amp; Studying</heldHumanSetting.Label.ProductionStuding>
+    <heldHumanSetting.Label.NeedsDLC>──── Needs &amp; DLC</heldHumanSetting.Label.NeedsDLC>
     <heldHumanSetting.Label.Restart>If you have modified the settings, restart the game.</heldHumanSetting.Label.Restart>
 
     <heldHumanSetting.Button.Reset>Reset</heldHumanSetting.Button.Reset>

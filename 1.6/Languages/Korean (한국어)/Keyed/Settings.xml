@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-    <heldHumanSetting.Label.ProductionStuding>────── 생산 &amp; 연구</heldHumanSetting.Label.ProductionStuding>
-    <heldHumanSetting.Label.NeedsDLC>────── 필요 &amp; DLC</heldHumanSetting.Label.NeedsDLC>
+    <heldHumanSetting.Label.ProductionStuding>──── 생산 &amp; 연구</heldHumanSetting.Label.ProductionStuding>
+    <heldHumanSetting.Label.NeedsDLC>──── 필요 &amp; DLC</heldHumanSetting.Label.NeedsDLC>
     <heldHumanSetting.Label.Restart>만약 설정을 바꿨다면 게임을 재시작하세요.</heldHumanSetting.Label.Restart>
 
     <heldHumanSetting.Button.Reset>초기화</heldHumanSetting.Button.Reset>

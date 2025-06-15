@@ -114,5 +114,45 @@ namespace HeldHuman.ToilHelper
             toil.activeSkill = () => SkillDefOf.Social;
             return toil;
         }
+
+        public static Toil TryEnslave(TargetIndex prisonerInd)
+        {
+            Toil toil = ToilMaker.MakeToil("TryEnslave");
+            toil.initAction = delegate
+            {
+                Pawn actor = toil.actor;
+                Pawn pawn = (Pawn)actor.jobs.curJob.GetTarget(prisonerInd).Thing;
+                actor.interactions.TryInteractWith(pawn, InteractionDefOf.EnslaveAttempt);
+
+                if (pawn.IsSlaveOfColony && pawn.IsOnHoldingPlatform)
+                {
+                    var platform = pawn.ParentHolder as Building_HoldingPlatform;
+                    platform.EjectContents();
+                }
+            };
+            toil.socialMode = RandomSocialMode.Off;
+            toil.defaultCompleteMode = ToilCompleteMode.Delay;
+            toil.defaultDuration = 350;
+            toil.activeSkill = () => SkillDefOf.Social;
+            return toil;
+        }
+
+        public static Toil TryConvert(TargetIndex prisonerInd)
+        {
+            Toil toil = ToilMaker.MakeToil("TryConvert");
+            toil.initAction = delegate
+            {
+                Pawn actor = toil.actor;
+                Pawn recipient = (Pawn)actor.jobs.curJob.GetTarget(prisonerInd).Thing;
+
+                actor.interactions.TryInteractWith(recipient, DefDatabase<InteractionDef>.GetNamed("ConvertIdeoAttemptHeldHuman"));
+            };
+
+            toil.socialMode = RandomSocialMode.Off;
+            toil.defaultCompleteMode = ToilCompleteMode.Delay;
+            toil.defaultDuration = 350;
+            toil.activeSkill = () => SkillDefOf.Social;
+            return toil;
+        }
     }
 }

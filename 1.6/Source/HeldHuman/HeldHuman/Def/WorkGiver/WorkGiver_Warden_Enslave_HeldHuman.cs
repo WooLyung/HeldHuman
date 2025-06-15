@@ -5,7 +5,7 @@ using HeldHuman.Tool;
 
 namespace HeldHuman.Def
 {
-    public class WorkGiver_HeldHuman_Chat : WorkGiver_Scanner
+    public class WorkGiver_Warden_Enslave_HeldHuman : WorkGiver_Scanner
     {
         public override PathEndMode PathEndMode => PathEndMode.ClosestTouch;
 
@@ -18,13 +18,16 @@ namespace HeldHuman.Def
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
+            if (!ModLister.CheckIdeology("WorkGiver_Warden_Enslave"))
+                return false;
+
             CompEntityHolder holder = t.TryGetComp<CompEntityHolder>();
             if (holder == null || holder.HeldPawn == null || !HumanTool.IsHoldableHuman(holder.HeldPawn))
                 return false;
             Pawn target = holder.HeldPawn;
+
             PrisonerInteractionModeDef exclusiveInteractionMode = target.guest.ExclusiveInteractionMode;
-            
-            if ((exclusiveInteractionMode == PrisonerInteractionModeDefOf.AttemptRecruit || exclusiveInteractionMode == PrisonerInteractionModeDefOf.ReduceResistance) && !target.guest.ScheduledForInteraction)
+            if ((exclusiveInteractionMode == PrisonerInteractionModeDefOf.ReduceWill || exclusiveInteractionMode == PrisonerInteractionModeDefOf.Enslave) && !target.guest.ScheduledForInteraction)
             {
                 JobFailReason.Is("PrisonerInteractedTooRecently".Translate());
                 return false;
@@ -35,17 +38,21 @@ namespace HeldHuman.Def
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
+            if (!ModLister.CheckIdeology("WorkGiver_Warden_Enslave"))
+                return null;
+
             CompEntityHolder holder = t.TryGetComp<CompEntityHolder>();
             if (holder == null || holder.HeldPawn == null || !HumanTool.IsHoldableHuman(holder.HeldPawn))
                 return null;
             Pawn target = holder.HeldPawn;
 
-            PrisonerInteractionModeDef exclusiveInteractionMode = target.guest.ExclusiveInteractionMode;
-            if ((exclusiveInteractionMode == PrisonerInteractionModeDefOf.AttemptRecruit || exclusiveInteractionMode == PrisonerInteractionModeDefOf.ReduceResistance) && target.guest.ScheduledForInteraction && pawn.health.capacities.CapableOf(PawnCapacityDefOf.Talking) && pawn.CanReserve(t))
+            bool flag = target.guest.IsInteractionEnabled(PrisonerInteractionModeDefOf.Enslave);
+            bool flag2 = target.guest.IsInteractionEnabled(PrisonerInteractionModeDefOf.ReduceWill);
+            if ((flag || flag2) && target.guest.ScheduledForInteraction && target.guest.IsPrisoner && (!flag2 || target.guest.will > 0f) && pawn.health.capacities.CapableOf(PawnCapacityDefOf.Talking) && pawn.CanReserve(t) && new HistoryEvent(HistoryEventDefOf.EnslavedPrisoner, pawn.Named(HistoryEventArgsNames.Doer)).Notify_PawnAboutToDo_Job())
             {
-                if (exclusiveInteractionMode == PrisonerInteractionModeDefOf.ReduceResistance && target.guest.Resistance <= 0f)
-                    return null;
-                return JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("HeldHumanAttemptRecruit"), target);
+                if (flag)
+                    return JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("HeldHumanEnslave"), target);
+                return JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("HeldHumanReduceWill"), target);
             }
 
             return null;

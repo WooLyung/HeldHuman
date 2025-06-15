@@ -72,11 +72,37 @@
     <WorkGiverDef>
         <defName>ChatWithHeldHuman</defName>
         <label>chat with held human</label>
-        <giverClass>HeldHuman.Def.WorkGiver_HeldHuman_Chat</giverClass>
+        <giverClass>HeldHuman.Def.WorkGiver_Warden_Chat_HeldHuman</giverClass>
         <workType>Warden</workType>
         <verb>chat with</verb>
         <gerund>chatting with</gerund>
         <priorityInType>60</priorityInType>
+        <requiredCapacities>
+            <li>Talking</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>EnslaveHeldHuman</defName>
+        <label>enslave held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_Warden_Enslave_HeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>enslave</verb>
+        <gerund>enslaving</gerund>
+        <priorityInType>95</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+     <WorkGiverDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>ConvertHeldHuman</defName>
+        <label>convert held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_Warden_Convert_HeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>convert</verb>
+        <gerund>converting</gerund>
+        <priorityInType>72</priorityInType>
         <requiredCapacities>
             <li>Talking</li>
         </requiredCapacities>

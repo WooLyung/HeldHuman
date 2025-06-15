@@ -48,5 +48,28 @@
         <driverClass>HeldHuman.Def.JobDriver_ChatWithHeldHuman</driverClass>
         <reportString>attempting to recruit TargetA.</reportString>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-    </JobDef>    
+    </JobDef>
+
+    <JobDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>HeldHumanEnslave</defName>
+        <driverClass>HeldHuman.Def.JobDriver_EnslaveOrReduceWillHeldHuman</driverClass>
+        <reportString>enslaving TargetA.</reportString>
+        <alwaysShowWeapon>true</alwaysShowWeapon>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>HeldHumanReduceWill</defName>
+        <driverClass>HeldHuman.Def.JobDriver_EnslaveOrReduceWillHeldHuman</driverClass>
+        <reportString>reducing will of TargetA.</reportString>
+        <alwaysShowWeapon>true</alwaysShowWeapon>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>HeldHumanConvert</defName>
+        <driverClass>HeldHuman.Def.JobDriver_ConvertHeldHuman</driverClass>
+        <reportString>converting TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
 </Defs>
