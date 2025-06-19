@@ -86,6 +86,9 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
     {
         static void Postfix(ref CompHoldingPlatformTarget __instance)
         {
+            if (!HumanTool.IsHoldableHuman(__instance.parent))
+                return;
+
             Pawn pawn = (Pawn)__instance.parent;
             Thought_Memory memory = (Thought_Memory)ThoughtMaker.MakeThought(DefDatabase<ThoughtDef>.GetNamed("HaveBeenHeldHuman"));
             pawn.needs.mood.thoughts.memories.TryGainMemory(memory);
