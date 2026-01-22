@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StatCategoryDef>
+		<defName>HeldHumanStat</defName>
+		<label>Held human stat</label>
+		<displayOrder>200</displayOrder>
+	</StatCategoryDef>
+
+	<StatDef>
+		<defName>EscapeIntervalFactor</defName>
+		<label>escape interval factor</label>
+		<description>Escape interval multiplier factor for held humans.</description>
+		<category>HeldHumanStat</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<hideAtValue>1</hideAtValue>
+		<displayPriorityInCategory>2</displayPriorityInCategory>
+		<alwaysHide>true</alwaysHide>
+	</StatDef>
+
+	<StatDef>
+		<defName>BioferriteDensity</defName>
+		<label>bioferrite density</label>
+		<description>The amount of additional bioferrite that can be extracted from a held human.</description>
+		<category>HeldHumanStat</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>Integer</toStringStyle>
+		<toStringNumberSense>Offset</toStringNumberSense>
+		<hideAtValue>0</hideAtValue>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+		<alwaysHide>true</alwaysHide>
+	</StatDef>
+
+	<StatDef>
+		<defName>BioelectricCharge</defName>
+		<label>bioelectric charge</label>
+		<description>A multiplier factor for the power that can be generated from a held human.</description>
+		<category>HeldHumanStat</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<hideAtValue>1</hideAtValue>
+		<displayPriorityInCategory>2</displayPriorityInCategory>
+		<alwaysHide>true</alwaysHide>
+	</StatDef>
+</Defs>

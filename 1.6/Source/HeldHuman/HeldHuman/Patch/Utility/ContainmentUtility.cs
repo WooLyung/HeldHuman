@@ -12,7 +12,7 @@ namespace HeldHuman.Patch.ContainmentUtility_
     {
         static void Postfix(ref float __result, Pawn pawn, StringBuilder sb)
         {
-            foreach (var hooker in EscapeHookers.GetHookers())
+            foreach (var hooker in EscapeIntervalHookers.GetHookers())
             {
                 hooker.Modify(pawn, ref __result);
                 if (sb != null)

@@ -67,6 +67,7 @@
     <Compile Include="Def\JobDriver\JobDriver_ExecuteHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_OperateHeldHuman.cs" />
     <Compile Include="Def\InteractionWorker\InteractionWorker_ConvertIdeoAttempt_HeldHuman.cs" />
+    <Compile Include="Def\StatDefOf.cs" />
     <Compile Include="Def\ThoughtWorker\ThoughtWorker_HeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_FeedHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_Warden_Convert_HeldHuman.cs" />
@@ -79,12 +80,14 @@
     <Compile Include="Core\HeldHumanMod.cs" />
     <Compile Include="Hook\BioferriteDensityHooker\BioferriteDensityHooker.cs" />
     <Compile Include="Hook\BioferriteDensityHooker\BioferriteDensityHookers.cs" />
-    <Compile Include="Hook\EscapeHooker\EscapeHooker.cs" />
-    <Compile Include="Hook\EscapeHooker\EscapeHookers.cs" />
+    <Compile Include="Hook\BioferriteDensityHooker\BioferriteDensityStatHooker.cs" />
+    <Compile Include="Hook\EscapeIntervalHooker\EscapeIntervalHooker.cs" />
+    <Compile Include="Hook\EscapeIntervalHooker\EscapeIntervalHookers.cs" />
+    <Compile Include="Hook\EscapeIntervalHooker\EscapeIntervalStatHooker.cs" />
     <Compile Include="Hook\PowerHooker\PowerHooker.cs" />
     <Compile Include="Hook\Hooker.cs" />
     <Compile Include="Hook\PowerHooker\PowerHookers.cs" />
-    <Compile Include="Hook\PowerHooker\PowerSettingHooker.cs" />
+    <Compile Include="Hook\PowerHooker\PowerStatHooker.cs" />
     <Compile Include="Patch\Building\Building_SubcoreScanner.cs" />
     <Compile Include="Patch\Building\Building_GeneExtractor.cs" />
     <Compile Include="Patch\Comp\CompPowerPlantElectroharvester.cs" />
