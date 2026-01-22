@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using HeldHuman.Tool;
+using RimWorld;
 using Verse;
 
 namespace HeldHuman.Patch.Pawn_
@@ -9,7 +10,7 @@ namespace HeldHuman.Patch.Pawn_
     {
         static bool Prefix(ref Pawn __instance, ref bool __result)
         {
-            if (HumanTool.IsHoldableHuman(__instance) && __instance.IsOnHoldingPlatform)
+            if (HumanTools.IsHoldableHuman(__instance) && __instance.IsOnHoldingPlatform)
             {
                 __result = true;
                 return false;

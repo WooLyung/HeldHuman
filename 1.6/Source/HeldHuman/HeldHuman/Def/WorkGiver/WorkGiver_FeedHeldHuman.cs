@@ -14,7 +14,7 @@ namespace HeldHuman.Def
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             CompEntityHolder holder = t.TryGetComp<CompEntityHolder>();
-            if (holder == null || holder.HeldPawn == null || !HumanTool.IsHoldableHuman(holder.HeldPawn))
+            if (holder == null || holder.HeldPawn == null || !HumanTools.IsHoldableHuman(holder.HeldPawn))
                 return null;
             Pawn target = holder.HeldPawn;
 

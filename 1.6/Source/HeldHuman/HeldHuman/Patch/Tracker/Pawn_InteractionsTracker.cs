@@ -13,7 +13,7 @@ namespace HeldHuman.Patch.Pawn_InteractionsTracker_
         static bool Prefix(ref Pawn_InteractionsTracker __instance, ref bool __result, Pawn recipient, InteractionDef interactionDef = null)
         {
             Pawn pawn = (Pawn)AccessTools.Field(typeof(Pawn_InteractionsTracker), "pawn").GetValue(__instance);
-            if (!HumanTool.IsHoldableHuman(recipient) || !recipient.IsOnHoldingPlatform)
+            if (!HumanTools.IsHoldableHuman(recipient) || !recipient.IsOnHoldingPlatform)
                 return true;
 
             if (__instance.InteractedTooRecentlyToInteract())

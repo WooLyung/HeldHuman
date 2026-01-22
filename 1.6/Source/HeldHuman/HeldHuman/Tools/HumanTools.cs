@@ -4,7 +4,7 @@ using Verse;
 
 namespace HeldHuman.Tool
 {
-    public static class HumanTool
+    public static class HumanTools
     {
         public static bool IsPawn(Thing thing) => thing != null && thing is Pawn;
         public static bool IsHoldableHuman(Thing thing) => IsPawn(thing) && IsHoldableHuman(thing as Pawn);
@@ -17,7 +17,7 @@ namespace HeldHuman.Tool
         {
             foreach (Thing holder in map.listerThings.ThingsInGroup(ThingRequestGroup.EntityHolder))
             {
-                Pawn pawn = PlatformTool.GetHeldPawn(holder);
+                Pawn pawn = PlatformTools.GetHeldPawn(holder);
                 if (IsHoldableHuman(pawn))
                     yield return pawn;
             }

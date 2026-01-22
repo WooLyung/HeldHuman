@@ -11,7 +11,7 @@ namespace HeldHuman.Patch.Need_Rest_
         static bool Prefix(ref Need_Rest __instance)
         {
             Pawn pawn = (Pawn)AccessTools.Field(typeof(Need), "pawn").GetValue(__instance);
-            if (!HumanTool.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
+            if (!HumanTools.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
                 return true;
 
             float num = 0.1f;
@@ -29,7 +29,7 @@ namespace HeldHuman.Patch.Need_Rest_
         static bool Prefix(ref Need_Rest __instance, ref int __result)
         {
             Pawn pawn = (Pawn)AccessTools.Field(typeof(Need), "pawn").GetValue(__instance);
-            if (!HumanTool.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
+            if (!HumanTools.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
                 return true;
 
             __result = 1;

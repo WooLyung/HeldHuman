@@ -18,7 +18,7 @@ namespace HeldHuman.Transpiler.Thing_
             codes[0].labels.Add(label);
 
             yield return new CodeInstruction(OpCodes.Ldarg_0);
-            yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(HumanTool), "IsHoldableHuman", new Type[] { typeof(Thing) }));
+            yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(HumanTools), "IsHoldableHuman", new Type[] { typeof(Thing) }));
             yield return new CodeInstruction(OpCodes.Brfalse_S, label);
             yield return new CodeInstruction(OpCodes.Ldarg_0);
             yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(Thing), "get_IsOnHoldingPlatform"));
@@ -42,7 +42,7 @@ namespace HeldHuman.Transpiler.Thing_
             codes[0].labels.Add(label);
 
             yield return new CodeInstruction(OpCodes.Ldarg_0);
-            yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(HumanTool), "IsHoldableHuman", new Type[] { typeof(Thing) }));
+            yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(HumanTools), "IsHoldableHuman", new Type[] { typeof(Thing) }));
             yield return new CodeInstruction(OpCodes.Brfalse_S, label);
             yield return new CodeInstruction(OpCodes.Ldarg_0);
             yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(Thing), "get_IsOnHoldingPlatform"));
@@ -66,7 +66,7 @@ namespace HeldHuman.Transpiler.Thing_
             codes[0].labels.Add(label);
 
             yield return new CodeInstruction(OpCodes.Ldarg_0);
-            yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(HumanTool), "IsHoldableHuman", new Type[] { typeof(Thing) }));
+            yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(HumanTools), "IsHoldableHuman", new Type[] { typeof(Thing) }));
             yield return new CodeInstruction(OpCodes.Brfalse_S, label);
             yield return new CodeInstruction(OpCodes.Ldarg_0);
             yield return new CodeInstruction(OpCodes.Call, AccessTools.Method(typeof(Thing), "get_IsOnHoldingPlatform"));

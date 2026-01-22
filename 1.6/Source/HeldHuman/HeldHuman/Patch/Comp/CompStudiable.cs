@@ -12,7 +12,7 @@ namespace HeldHuman.Patch.CompStudiable_
     {
         static bool Prefix(ref CompStudiable __instance, ref bool __result)
         {
-            if (!HumanTool.IsHoldableHuman(__instance.parent))
+            if (!HumanTools.IsHoldableHuman(__instance.parent))
                 return true;
 
             Pawn pawn = (Pawn)__instance.parent;
@@ -39,8 +39,8 @@ namespace HeldHuman.Patch.CompStudiable_
 
         static void Postfix(ref CompStudiable __instance, ref bool __result, ref string reason)
         {
-            if (!__result && HumanTool.IsHuman(__instance.parent) && __instance.parent.IsOnHoldingPlatform)
-                if (HumanTool.IsCreepJoiner(__instance.parent as Pawn) || ModSettings.Instance.enableStudying)
+            if (!__result && HumanTools.IsHuman(__instance.parent) && __instance.parent.IsOnHoldingPlatform)
+                if (HumanTools.IsCreepJoiner(__instance.parent as Pawn) || ModSettings.Instance.enableStudying)
                     __result = true;
         }
     }

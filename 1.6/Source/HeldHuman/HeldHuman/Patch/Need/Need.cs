@@ -11,13 +11,19 @@ namespace HeldHuman.Patch.Need_
         static void Postfix(ref Need __instance, ref bool __result)
         {
             Pawn pawn = (Pawn)AccessTools.Field(typeof(Need), "pawn").GetValue(__instance);
-            if (!HumanTool.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
+            if (!HumanTools.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
                 return;
 
             if (__instance is Need_Food && !Setting.ModSettings.Instance.enableFood)
+            {
                 __result = false;
+                return;
+            }
             if (__instance is Need_Beauty || __instance is Need_Comfort)
+            {
                 __result = false;
+                return;
+            }
         }
     }
 }

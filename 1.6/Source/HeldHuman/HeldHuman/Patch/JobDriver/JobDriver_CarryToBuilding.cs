@@ -21,7 +21,7 @@ namespace HeldHuman.Patch.JobDriver_CarryToBuilding_
             Pawn takee = (Pawn)job.GetTarget(TakeeInd).Thing;
             Building_Enterable building = (Building_Enterable)job.GetTarget(TargetIndex.A).Thing;
 
-            if (!HumanTool.IsHoldableHuman(takee) || !takee.IsOnHoldingPlatform)
+            if (!HumanTools.IsHoldableHuman(takee) || !takee.IsOnHoldingPlatform)
             {
                 foreach (var toil in __result)
                     yield return toil;

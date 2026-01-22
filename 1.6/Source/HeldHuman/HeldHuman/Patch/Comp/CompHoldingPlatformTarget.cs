@@ -22,7 +22,7 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
             }
             if (!pawn.Spawned)
                 return true;
-            if (!HumanTool.IsHoldableHuman(pawn))
+            if (!HumanTools.IsHoldableHuman(pawn))
                 return true;
 
             if (ModsConfig.IdeologyActive && pawn.IsSlaveOfColony || pawn.IsPrisonerOfColony)
@@ -48,7 +48,7 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
         static void Postfix(ref CompHoldingPlatformTarget __instance, ThingOwner newOwner)
         {
             Thing thing = newOwner.GetLast();
-            if (HumanTool.IsHoldableHuman(thing))
+            if (HumanTools.IsHoldableHuman(thing))
             {
                 Pawn pawn = (Pawn)thing;
                 pawn.guest.CapturedBy(Faction.OfPlayer);
@@ -61,7 +61,7 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
     {
         static void Postfix(ref CompHoldingPlatformTarget __instance, ref bool __result)
         {
-            if (!__result && HumanTool.IsHoldableHuman(__instance.parent))
+            if (!__result && HumanTools.IsHoldableHuman(__instance.parent))
                 __result = true;
         }
     }
@@ -72,7 +72,7 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
     {
         static void Postfix(ref CompHoldingPlatformTarget __instance, bool initiator)
         {
-            if (!HumanTool.IsHoldableHuman(__instance.parent))
+            if (!HumanTools.IsHoldableHuman(__instance.parent))
                 return;
 
             Pawn pawn = (Pawn)__instance.parent;
@@ -86,7 +86,7 @@ namespace HeldHuman.Patch.CompHoldingPlatformTarget_
     {
         static void Postfix(ref CompHoldingPlatformTarget __instance)
         {
-            if (!HumanTool.IsHoldableHuman(__instance.parent))
+            if (!HumanTools.IsHoldableHuman(__instance.parent))
                 return;
 
             Pawn pawn = (Pawn)__instance.parent;

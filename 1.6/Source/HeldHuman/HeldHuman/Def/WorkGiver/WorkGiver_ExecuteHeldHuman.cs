@@ -27,7 +27,7 @@ namespace HeldHuman.Def
             if (potentialPlatform is Building_HoldingPlatform building_HoldingPlatform)
             {
                 Pawn heldPawn = building_HoldingPlatform.HeldPawn;
-                if (heldPawn == null || !HumanTool.IsHoldableHuman(heldPawn))
+                if (heldPawn == null || !HumanTools.IsHoldableHuman(heldPawn))
                     return null;
 
                 if (heldPawn.guest.IsInteractionEnabled(PrisonerInteractionModeDefOf.Execution))

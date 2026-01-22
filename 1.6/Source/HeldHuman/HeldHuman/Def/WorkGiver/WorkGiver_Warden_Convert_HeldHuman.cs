@@ -22,7 +22,7 @@ namespace HeldHuman.Def
                 return false;
 
             CompEntityHolder holder = t.TryGetComp<CompEntityHolder>();
-            if (holder == null || holder.HeldPawn == null || !HumanTool.IsHoldableHuman(holder.HeldPawn))
+            if (holder == null || holder.HeldPawn == null || !HumanTools.IsHoldableHuman(holder.HeldPawn))
                 return false;
 
             Pawn target = holder.HeldPawn;
@@ -41,7 +41,7 @@ namespace HeldHuman.Def
                 return null;
 
             CompEntityHolder holder = t.TryGetComp<CompEntityHolder>();
-            if (holder == null || holder.HeldPawn == null || !HumanTool.IsHoldableHuman(holder.HeldPawn))
+            if (holder == null || holder.HeldPawn == null || !HumanTools.IsHoldableHuman(holder.HeldPawn))
                 return null;
             Pawn target = holder.HeldPawn;
 

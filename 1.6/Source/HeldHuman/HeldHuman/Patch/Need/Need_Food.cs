@@ -17,7 +17,7 @@ namespace HeldHuman.Patch.Need_Food_
                 return true;
 
             Pawn pawn = (Pawn)AccessTools.Field(typeof(Need), "pawn").GetValue(__instance);
-            if (!HumanTool.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
+            if (!HumanTools.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
                 return true;
 
             Building_Bed building_Bed = pawn.CurrentBed();
@@ -56,7 +56,7 @@ namespace HeldHuman.Patch.Need_Food_
 
             Pawn pawn = (Pawn)AccessTools.Field(typeof(Need), "pawn").GetValue(__instance);
 
-            if (!HumanTool.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
+            if (!HumanTools.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
                 return true;
 
             __result = pawn.Suspended || (__instance.def.freezeWhileSleeping && !pawn.Awake()) || (__instance.def.freezeInMentalState && pawn.InMentalState) || 

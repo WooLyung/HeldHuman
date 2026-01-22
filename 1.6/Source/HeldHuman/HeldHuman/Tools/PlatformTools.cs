@@ -4,7 +4,7 @@ using Verse;
 
 namespace HeldHuman.Tool
 {
-    public static class PlatformTool
+    public static class PlatformTools
     {
         public static Pawn GetHeldPawn(Thing holder) => (holder as ThingWithComps)?.GetComp<CompEntityHolderPlatform>()?.HeldPawn;
 
@@ -18,7 +18,7 @@ namespace HeldHuman.Tool
         public static IEnumerable<Building_HoldingPlatform> GetAllInHumanPlatforms(Map map)
         {
             foreach (Thing holder in map.listerThings.ThingsInGroup(ThingRequestGroup.EntityHolder))
-                if (holder is Building_HoldingPlatform holder0 && HumanTool.IsHoldableHuman(GetHeldPawn(holder0)))
+                if (holder is Building_HoldingPlatform holder0 && HumanTools.IsHoldableHuman(GetHeldPawn(holder0)))
                     yield return holder0;
         }
     }

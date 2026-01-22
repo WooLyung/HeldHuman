@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using HeldHuman.Hook;
 using HeldHuman.Tool;
 using RimWorld;
 using UnityEngine;
@@ -18,8 +19,12 @@ namespace HeldHuman.Patch.CompPowerPlantElectroharvester_
                 if ((building_HoldingPlatform = platform as Building_HoldingPlatform) != null && building_HoldingPlatform.Occupied)
                 {
                     float value = Mathf.RoundToInt(building_HoldingPlatform.HeldPawn.BodySize * (0f - __instance.Props.PowerConsumption) * 0.1f);
-                    if (HumanTool.IsHoldableHuman(building_HoldingPlatform.HeldPawn))
+                    if (HumanTools.IsHoldableHuman(building_HoldingPlatform.HeldPawn))
+                    {
                         value *= Setting.ModSettings.Instance.powerFactor * 0.01f;
+                        foreach (var hooker in PowerHookers.GetHookers())
+                            hooker.Modify(building_HoldingPlatform.HeldPawn, ref value);
+                    }
                     num += value;
                 }
             }

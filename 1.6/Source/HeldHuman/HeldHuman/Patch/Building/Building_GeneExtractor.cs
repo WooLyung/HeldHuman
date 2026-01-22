@@ -32,7 +32,7 @@ namespace HeldHuman.Patch.Building_HoldingPlatform_
 
                         foreach (Pawn item in __instance.Map.mapPawns.AllPawnsSpawned)
                             pawns.Add(item);
-                        foreach (Pawn item in HumanTool.GetAllHeldHumans(__instance.Map))
+                        foreach (Pawn item in HumanTools.GetAllHeldHumans(__instance.Map))
                             pawns.Add(item);
 
                         foreach (Pawn item in pawns)

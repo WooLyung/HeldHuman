@@ -15,7 +15,7 @@ namespace HeldHuman.Patch.Building_HoldingPlatform_
                 return;
 
             Pawn pawn = __instance.HeldPawn;
-            if (!HumanTool.IsHoldableHuman(pawn))
+            if (!HumanTools.IsHoldableHuman(pawn))
                 return;
 
             AttachPointTracker points = null; 
@@ -50,7 +50,7 @@ namespace HeldHuman.Patch.Building_HoldingPlatform_
         static void Postfix(ref Building_HoldingPlatform __instance)
         {
             Pawn pawn = __instance.HeldPawn;
-            if (!ModsConfig.BiotechActive || pawn == null || !HumanTool.IsHoldableHuman(pawn))
+            if (!ModsConfig.BiotechActive || pawn == null || !HumanTools.IsHoldableHuman(pawn))
                 return;
             if (pawn.IsHashIntervalTick(15000) && CanSafelyBeQueuedForHemogenExtraction(pawn) && pawn.guest.guestStatusInt == GuestStatus.Prisoner && pawn.guest.IsInteractionEnabled(PrisonerInteractionModeDefOf.HemogenFarm))
                 HealthCardUtility.CreateSurgeryBill(pawn, RecipeDefOf.ExtractHemogenPack, (BodyPartRecord)null, sendMessages: false);

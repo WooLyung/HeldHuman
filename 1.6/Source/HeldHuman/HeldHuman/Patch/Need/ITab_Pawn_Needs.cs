@@ -13,7 +13,7 @@ namespace HeldHuman.Patch.ITab_Pawn_Needs_
             if (!__result)
             {
                 Pawn pawn = (Pawn)AccessTools.Method(typeof(ITab), "get_SelPawn").Invoke(__instance, null);
-                if (HumanTool.IsHoldableHuman(pawn) && pawn.IsOnHoldingPlatform && pawn.needs.AllNeeds.Count > 0)
+                if (HumanTools.IsHoldableHuman(pawn) && pawn.IsOnHoldingPlatform && pawn.needs.AllNeeds.Count > 0)
                     __result = true;
             }
         }

@@ -9,22 +9,22 @@
       <li>
         <label>held human</label>
         <description>I was caught with my limbs tied up.</description>
-        <baseMoodEffect>-10</baseMoodEffect>
+        <baseMoodEffect>-20</baseMoodEffect>
       </li>
       <li>
         <label>long-term held human</label>
         <description>I've been tied up for too long. I can feel nothing.</description>
-        <baseMoodEffect>-20</baseMoodEffect>
+        <baseMoodEffect>-40</baseMoodEffect>
       </li>
       <li>
         <label>being treated as a entity</label>
         <description>I'm not a entity.</description>
-        <baseMoodEffect>-30</baseMoodEffect>
+        <baseMoodEffect>-60</baseMoodEffect>
       </li>
       <li>
         <label>human-like entity</label>
         <description>...</description>
-        <baseMoodEffect>-40</baseMoodEffect>
+        <baseMoodEffect>-80</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -37,7 +37,7 @@
       <li>
         <label>have been held</label>
         <description>I've been held with my limbs tied up like a entity.</description>
-        <baseMoodEffect>-10</baseMoodEffect>
+        <baseMoodEffect>-20</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>

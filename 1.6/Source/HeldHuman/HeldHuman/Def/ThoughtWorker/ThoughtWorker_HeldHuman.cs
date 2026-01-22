@@ -9,7 +9,7 @@ namespace HeldHuman.Def
     {
         protected override ThoughtState CurrentStateInternal(Pawn pawn)
         {
-            if (!HumanTool.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
+            if (!HumanTools.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
                 return ThoughtState.Inactive;
 
             Building_HoldingPlatform platform = (Building_HoldingPlatform)pawn.ParentHolder;

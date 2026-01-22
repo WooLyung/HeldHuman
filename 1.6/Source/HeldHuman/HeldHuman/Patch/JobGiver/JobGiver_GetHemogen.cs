@@ -14,8 +14,8 @@ namespace HeldHuman.Patch.JobGiver_GetHemogen_
     {
         private static Building_HoldingPlatform GetTarget(Pawn pawn)
         {
-            Building_HoldingPlatform platform = (Building_HoldingPlatform)GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, PlatformTool.GetAllInHumanPlatforms(pawn.Map), PathEndMode.OnCell, TraverseParms.For(pawn), 9999f, 
-                (Thing t) => (platform = t as Building_HoldingPlatform) != null && HumanTool.IsHoldableHuman(PlatformTool.GetHeldPawn(platform)) && JobGiver_GetHemogen.CanFeedOnPrisoner(pawn, PlatformTool.GetHeldPawn(platform)).Accepted);
+            Building_HoldingPlatform platform = (Building_HoldingPlatform)GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, PlatformTools.GetAllInHumanPlatforms(pawn.Map), PathEndMode.OnCell, TraverseParms.For(pawn), 9999f, 
+                (Thing t) => (platform = t as Building_HoldingPlatform) != null && HumanTools.IsHoldableHuman(PlatformTools.GetHeldPawn(platform)) && JobGiver_GetHemogen.CanFeedOnPrisoner(pawn, PlatformTools.GetHeldPawn(platform)).Accepted);
             return platform;
         }
 

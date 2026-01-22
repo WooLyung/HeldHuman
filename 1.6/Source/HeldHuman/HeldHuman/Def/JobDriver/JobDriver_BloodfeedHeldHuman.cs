@@ -12,7 +12,7 @@ namespace HeldHuman.Def
         public const int WaitTicks = 120;
 
         private Building_HoldingPlatform Platform => (Building_HoldingPlatform) job.targetA.Thing;
-        private Pawn Pawn => PlatformTool.GetHeldPawn(Platform);
+        private Pawn Pawn => PlatformTools.GetHeldPawn(Platform);
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
@@ -22,7 +22,7 @@ namespace HeldHuman.Def
         protected override IEnumerable<Toil> MakeNewToils()
         {
             this.FailOnDespawnedOrNull(TargetIndex.A);
-            this.FailOn(() => !HumanTool.IsHoldableHuman(Pawn) || !Pawn.IsPrisonerOfColony || !Pawn.guest.PrisonerIsSecure || Pawn.InAggroMentalState || Pawn.guest.IsInteractionDisabled(PrisonerInteractionModeDefOf.Bloodfeed));
+            this.FailOn(() => !HumanTools.IsHoldableHuman(Pawn) || !Pawn.IsPrisonerOfColony || !Pawn.guest.PrisonerIsSecure || Pawn.InAggroMentalState || Pawn.guest.IsInteractionDisabled(PrisonerInteractionModeDefOf.Bloodfeed));
             yield return Toils_Interpersonal.GotoPrisoner(pawn, Pawn, PrisonerInteractionModeDefOf.Bloodfeed);
             yield return Toils_General.WaitWith(TargetIndex.A, 120, useProgressBar: true).PlaySustainerOrSound(SoundDefOf.Bloodfeed_Cast);
             yield return Toils_General.Do(delegate

@@ -2,6 +2,7 @@
 using HeldHuman.Tool;
 using RimWorld;
 using System;
+using Unity.Jobs;
 using Verse;
 using Verse.AI;
 
@@ -16,7 +17,7 @@ namespace HeldHuman.Def
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             CompEntityHolder holder = t.TryGetComp<CompEntityHolder>();
-            if (holder == null || holder.HeldPawn == null || !HumanTool.IsHoldableHuman(holder.HeldPawn))
+            if (holder == null || holder.HeldPawn == null || !HumanTools.IsHoldableHuman(holder.HeldPawn))
                 return null;
 
             Pawn target = holder.HeldPawn;
@@ -32,10 +33,11 @@ namespace HeldHuman.Def
             var method = AccessTools.Method(typeof(WorkGiver_DoBill), "StartOrResumeBillJob", new Type[] { typeof(Pawn), typeof(IBillGiver), typeof(bool) });
             Job job = (Job)method.Invoke(this, new object[] { pawn, billGiver, true });
             if (job != null)
+            {
                 job.def = DefDatabase<JobDef>.GetNamed("OperateHeldHuman");
-
-            if (!job.TryMakePreToilReservations(pawn, false))
-                return null;
+                if (!job.TryMakePreToilReservations(pawn, false))
+                    return null;
+            }
 
             return job;
         }

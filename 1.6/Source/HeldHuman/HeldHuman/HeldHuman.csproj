@@ -76,7 +76,15 @@
     <Compile Include="Def\WorkGiver\WorkGiver_ExecuteHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_StripHeldHuman.cs" />
     <Compile Include="Def\WorkGiver\WorkGiver_ReleaseHeldHuman.cs" />
-    <Compile Include="HeldHumanMod.cs" />
+    <Compile Include="Core\HeldHumanMod.cs" />
+    <Compile Include="Hook\BioferriteDensityHooker\BioferriteDensityHooker.cs" />
+    <Compile Include="Hook\BioferriteDensityHooker\BioferriteDensityHookers.cs" />
+    <Compile Include="Hook\EscapeHooker\EscapeHooker.cs" />
+    <Compile Include="Hook\EscapeHooker\EscapeHookers.cs" />
+    <Compile Include="Hook\PowerHooker\PowerHooker.cs" />
+    <Compile Include="Hook\Hooker.cs" />
+    <Compile Include="Hook\PowerHooker\PowerHookers.cs" />
+    <Compile Include="Hook\PowerHooker\PowerSettingHooker.cs" />
     <Compile Include="Patch\Building\Building_SubcoreScanner.cs" />
     <Compile Include="Patch\Building\Building_GeneExtractor.cs" />
     <Compile Include="Patch\Comp\CompPowerPlantElectroharvester.cs" />
@@ -92,6 +100,7 @@
     <Compile Include="Patch\Need\ITab_Pawn_Needs.cs" />
     <Compile Include="Patch\Need\Need_Outdoors.cs" />
     <Compile Include="Patch\Tracker\Pawn_InteractionsTracker.cs" />
+    <Compile Include="Patch\Utility\ContainmentUtility.cs" />
     <Compile Include="Transpiler\Thing.cs" />
     <Compile Include="Patch\JobDriver\JobDriver_CarryToBuilding.cs" />
     <Compile Include="Patch\JobGiver\JobGiver_GetHemogen.cs" />
@@ -99,12 +108,10 @@
     <Compile Include="Setting\ModSettings.cs" />
     <Compile Include="ToilHelper\ToilFails.cs" />
     <Compile Include="ToilHelper\Toils.cs" />
-    <Compile Include="Tool\HumanTool.cs" />
+    <Compile Include="Tools\HumanTools.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tool\PlatformTool.cs" />
+    <Compile Include="Tools\PlatformTools.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Hook\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

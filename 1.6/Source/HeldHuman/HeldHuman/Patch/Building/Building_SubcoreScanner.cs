@@ -32,7 +32,7 @@ namespace HeldHuman.Patch.Building_SubcoreScanner_
                         List<Pawn> allPawnsSpawned = new List<Pawn>();
                         foreach (var item in __instance.Map.mapPawns.AllPawnsSpawned)
                             allPawnsSpawned.Add(item);
-                        foreach (var item in HumanTool.GetAllHeldHumans(__instance.Map))
+                        foreach (var item in HumanTools.GetAllHeldHumans(__instance.Map))
                             allPawnsSpawned.Add(item);
 
                         for (int j = 0; j < allPawnsSpawned.Count; j++)

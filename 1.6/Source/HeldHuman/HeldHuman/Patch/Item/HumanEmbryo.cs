@@ -30,7 +30,7 @@ namespace HeldHuman.Patch.HumanEmbryo_
                         if (floatMenuOption != null)
                             surrogateOptions.Add(floatMenuOption);
                     }
-                    foreach (Pawn item in HumanTool.GetAllHeldHumans(__instance.MapHeld))
+                    foreach (Pawn item in HumanTools.GetAllHeldHumans(__instance.MapHeld))
                     {
                         FloatMenuOption floatMenuOption = (FloatMenuOption)AccessTools.Method(typeof(HumanEmbryo), "CanImplantFloatOption", new Type[] { typeof(Pawn), typeof(bool) }).Invoke(__instance, new object[] { item, true });
                         if (floatMenuOption != null)

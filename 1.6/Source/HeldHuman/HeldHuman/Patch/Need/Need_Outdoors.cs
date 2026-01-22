@@ -11,7 +11,7 @@ namespace HeldHuman.Patch.Need_Outdoors_
         static void Postfix(ref Need_Outdoors __instance, ref bool __result)
         {
             Pawn pawn = (Pawn)AccessTools.Field(typeof(Need_Outdoors), "pawn").GetValue(__instance);
-            if (!HumanTool.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
+            if (!HumanTools.IsHoldableHuman(pawn) || !pawn.IsOnHoldingPlatform)
                 return;
 
             __result = false;
