@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\heldhuman\\hook\\bioferritedensityhooker\\bioferritedensitystathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\hook\\bioferritedensityhooker\\bioferritedensitystathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\heldhuman\\patch\\comp\\compproducesbioferrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\patch\\comp\\compproducesbioferrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\hook\\powerhooker\\powerstathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\hook\\powerhooker\\powerstathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\hook\\escapeintervalhooker\\escapeintervalstathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\hook\\escapeintervalhooker\\escapeintervalstathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\def\\statdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\heldhuman\\def\\statdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\def\\statdefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\patch\\utility\\containmentutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\heldhuman\\hook\\escapeintervalhooker\\escapeintervalstathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\hook\\escapeintervalhooker\\escapeintervalstathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\heldhuman\\patch\\utility\\containmentutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\patch\\utility\\containmentutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\hook\\bioferritedensityhooker\\bioferritedensitystathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\hook\\bioferritedensityhooker\\bioferritedensitystathooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\hook\\escapeintervalhooker\\escapeintervalhookers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\heldhuman\\hook\\escapeintervalhooker\\escapeintervalhookers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\hook\\escapeintervalhooker\\escapeintervalhookers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\hook\\escapeintervalhooker\\escapeintervalhooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\heldhuman\\hook\\escapeintervalhooker\\escapeintervalhooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\hook\\escapeintervalhooker\\escapeintervalhooker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\heldhuman\\1.6\\source\\heldhuman\\heldhuman\\patch\\comp\\compproducesbioferrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09EFA7DB-AF1A-41C9-AD55-0E90E48E3CF6}|HeldHuman\\HeldHuman.csproj|solutionrelative:heldhuman\\patch\\comp\\compproducesbioferrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,37 +42,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 215,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PowerStatHooker.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Hook\\PowerHooker\\PowerStatHooker.cs",
               "RelativeDocumentMoniker": "HeldHuman\\Hook\\PowerHooker\\PowerStatHooker.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Hook\\PowerHooker\\PowerStatHooker.cs",
               "RelativeToolTip": "HeldHuman\\Hook\\PowerHooker\\PowerStatHooker.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-22T09:33:49.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StatDefOf.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\StatDefOf.cs",
               "RelativeDocumentMoniker": "HeldHuman\\Def\\StatDefOf.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Def\\StatDefOf.cs",
               "RelativeToolTip": "HeldHuman\\Def\\StatDefOf.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAZAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAlwAoAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T09:27:04.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-22T09:27:04.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "EscapeIntervalHookers.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Hook\\EscapeIntervalHooker\\EscapeIntervalHookers.cs",
               "RelativeDocumentMoniker": "HeldHuman\\Hook\\EscapeIntervalHooker\\EscapeIntervalHookers.cs",
@@ -80,12 +79,11 @@
               "RelativeToolTip": "HeldHuman\\Hook\\EscapeIntervalHooker\\EscapeIntervalHookers.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T09:26:51.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-22T09:26:51.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "EscapeIntervalHooker.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Hook\\EscapeIntervalHooker\\EscapeIntervalHooker.cs",
               "RelativeDocumentMoniker": "HeldHuman\\Hook\\EscapeIntervalHooker\\EscapeIntervalHooker.cs",
@@ -93,25 +91,24 @@
               "RelativeToolTip": "HeldHuman\\Hook\\EscapeIntervalHooker\\EscapeIntervalHooker.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T09:26:45.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-22T09:26:45.575Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "CompProducesBioferrite.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Patch\\Comp\\CompProducesBioferrite.cs",
               "RelativeDocumentMoniker": "HeldHuman\\Patch\\Comp\\CompProducesBioferrite.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Patch\\Comp\\CompProducesBioferrite.cs",
               "RelativeToolTip": "HeldHuman\\Patch\\Comp\\CompProducesBioferrite.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAgwDwAAACBAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwDwAAACBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-22T09:21:01.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ContainmentUtility.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Patch\\Utility\\ContainmentUtility.cs",
               "RelativeDocumentMoniker": "HeldHuman\\Patch\\Utility\\ContainmentUtility.cs",
@@ -119,12 +116,11 @@
               "RelativeToolTip": "HeldHuman\\Patch\\Utility\\ContainmentUtility.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAlwAkAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T09:17:35.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-22T09:17:35.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "EscapeIntervalStatHooker.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Hook\\EscapeIntervalHooker\\EscapeIntervalStatHooker.cs",
               "RelativeDocumentMoniker": "HeldHuman\\Hook\\EscapeIntervalHooker\\EscapeIntervalStatHooker.cs",
@@ -132,18 +128,17 @@
               "RelativeToolTip": "HeldHuman\\Hook\\EscapeIntervalHooker\\EscapeIntervalStatHooker.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAIA7wBgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T09:17:08.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-22T09:17:08.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "BioferriteDensityStatHooker.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Hook\\BioferriteDensityHooker\\BioferriteDensityStatHooker.cs",
               "RelativeDocumentMoniker": "HeldHuman\\Hook\\BioferriteDensityHooker\\BioferriteDensityStatHooker.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\HeldHuman\\1.6\\Source\\HeldHuman\\HeldHuman\\Hook\\BioferriteDensityHooker\\BioferriteDensityStatHooker.cs",
               "RelativeToolTip": "HeldHuman\\Hook\\BioferriteDensityHooker\\BioferriteDensityStatHooker.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAA4AAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-22T09:17:07.236Z",
               "EditorCaption": ""

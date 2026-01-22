@@ -21,7 +21,7 @@ namespace HeldHuman.Hook
 
         public override void AddStatDraw(Pawn pawn, ref StringBuilder stringBuilder)
         {
-            stringBuilder.AppendLine("heldHumanStatDraw.BioferriteDensity".Translate() + ": " + GetOffset(pawn).ToString("+0;-#"));
+            stringBuilder.AppendLine("heldHumanStatDraw.BioferriteDensity".Translate() + ": " + GetOffset(pawn).ToString("+0.0;-0.0"));
         }
     }
 }

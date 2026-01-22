@@ -26,7 +26,7 @@
 		<category>HeldHumanStat</category>
 		<defaultBaseValue>0</defaultBaseValue>
 		<minValue>0</minValue>
-		<toStringStyle>Integer</toStringStyle>
+		<toStringStyle>FloatOne</toStringStyle>
 		<toStringNumberSense>Offset</toStringNumberSense>
 		<hideAtValue>0</hideAtValue>
 		<displayPriorityInCategory>1</displayPriorityInCategory>
