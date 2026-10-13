@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\workshop\content\294100\2009463077\1.6\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Def\GeneDefOf.cs" />
     <Compile Include="Def\JobDriver\JobDriver_ChatWithHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_ConvertHeldHuman.cs" />
     <Compile Include="Def\JobDriver\JobDriver_EnslaveOrReduceWillHeldHuman.cs" />

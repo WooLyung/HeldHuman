@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<FaintMind.label>희미한 정신</FaintMind.label>
+	<FaintMind.labelShortAdj>희미한 정신</FaintMind.labelShortAdj>
+	<FaintMind.description>이 유전자를 보유하면 정신이 희미해져 탈출 확률과 의식이 감소합니다.</FaintMind.description>
+	<FaintMind.symbolPack.prefixSymbols.0.symbol>희미한</FaintMind.symbolPack.prefixSymbols.0.symbol>
+
+	<VoidMind.label>공허한 정신</VoidMind.label>
+	<VoidMind.labelShortAdj>공허한 정신</VoidMind.labelShortAdj>
+	<VoidMind.description>이 유전자를 보유하면 정신이 완전히 공허해집니다. 탈출 확률과 의식이 크게 감소합니다.</VoidMind.description>
+	<VoidMind.symbolPack.prefixSymbols.0.symbol>공허한</VoidMind.symbolPack.prefixSymbols.0.symbol>
+
+	<BioBattery.label>생체 배터리</BioBattery.label>
+	<BioBattery.labelShortAdj>생체 배터리</BioBattery.labelShortAdj>
+	<BioBattery.description>이 유전자를 보유하면 이유를 알 수 없는 전기 에너지가 흐릅니다. 전기의 추출량이 증가하지만 통증이 동반됩니다.</BioBattery.description>
+	<BioBattery.symbolPack.prefixSymbols.0.symbol>찌릿한</BioBattery.symbolPack.prefixSymbols.0.symbol>
+
+	<LargeBioBattery.label>대형 생체 배터리</LargeBioBattery.label>
+	<LargeBioBattery.labelShortAdj>큰 생체 배터리</LargeBioBattery.labelShortAdj>
+	<LargeBioBattery.description>이 유전자를 보유하면 이유를 알 수 없는 전기 에너지가 흐릅니다. 전기의 추출량이 크게 증가하지만 통증이 동반됩니다.</LargeBioBattery.description>
+	<LargeBioBattery.symbolPack.prefixSymbols.0.symbol>찌릿한</LargeBioBattery.symbolPack.prefixSymbols.0.symbol>
+
+	<BioferriteTissue.label>생체강 조직</BioferriteTissue.label>
+	<BioferriteTissue.labelShortAdj>생체강 조직</BioferriteTissue.labelShortAdj>
+	<BioferriteTissue.description>이 유전자의 보유자는 생체강 조직이 자라납니다. 이동 속도가 감소하지만 생체강을 추출할 수 있습니다.</BioferriteTissue.description>
+	<BioferriteTissue.symbolPack.prefixSymbols.0.symbol>두꺼운</BioferriteTissue.symbolPack.prefixSymbols.0.symbol>
+</LanguageData>
