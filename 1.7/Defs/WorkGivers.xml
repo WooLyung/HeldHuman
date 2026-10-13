@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WorkGiverDef>
+        <defName>OperateHeldHuman</defName>
+        <label>operate on held humans</label>
+        <giverClass>HeldHuman.Def.WorkGiver_OperateHeldHuman</giverClass>
+        <workType>Doctor</workType>
+        <priorityInType>70</priorityInType>
+        <verb>operate on</verb>
+        <gerund>operating on</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+        <billGiversAllHumanlikes>true</billGiversAllHumanlikes>
+        <billGiversAllHumanlikesCorpses>true</billGiversAllHumanlikesCorpses>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>FeedHeldHuman</defName>
+        <label>feed held humans</label>
+        <giverClass>HeldHuman.Def.WorkGiver_FeedHeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>feed</verb>
+        <gerund>feeding</gerund>
+        <priorityInType>80</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>ReleaseHeldHuman</defName>
+        <label>release held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_ReleaseHeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>release</verb>
+        <gerund>releasing</gerund>
+        <priorityInType>65</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>ExecuteHeldHuman</defName>
+        <label>execute held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_ExecuteHeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>execute</verb>
+        <gerund>executing</gerund>
+        <priorityInType>115</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>StripHeldHuman</defName>
+        <label>strip held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_StripHeldHuman</giverClass>
+        <workType>Hauling</workType>
+        <verb>strip</verb>
+        <gerund>stripping</gerund>
+        <priorityInType>100</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <canBeDoneByMechs>false</canBeDoneByMechs>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>ChatWithHeldHuman</defName>
+        <label>chat with held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_Warden_Chat_HeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>chat with</verb>
+        <gerund>chatting with</gerund>
+        <priorityInType>60</priorityInType>
+        <requiredCapacities>
+            <li>Talking</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>EnslaveHeldHuman</defName>
+        <label>enslave held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_Warden_Enslave_HeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>enslave</verb>
+        <gerund>enslaving</gerund>
+        <priorityInType>95</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+     <WorkGiverDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>ConvertHeldHuman</defName>
+        <label>convert held human</label>
+        <giverClass>HeldHuman.Def.WorkGiver_Warden_Convert_HeldHuman</giverClass>
+        <workType>Warden</workType>
+        <verb>convert</verb>
+        <gerund>converting</gerund>
+        <priorityInType>72</priorityInType>
+        <requiredCapacities>
+            <li>Talking</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+</Defs>

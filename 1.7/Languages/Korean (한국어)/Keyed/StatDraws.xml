@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <heldHumanStatDraw.EscapeIntervalFactor>탈출 주기 계수</heldHumanStatDraw.EscapeIntervalFactor>
+    <heldHumanStatDraw.BioferriteDensity>추가 생체강 밀도</heldHumanStatDraw.BioferriteDensity>
+</LanguageData>

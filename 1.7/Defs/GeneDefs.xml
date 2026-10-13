@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef Name="GeneMindBase" Abstract="True">
+		<displayCategory>HumanResourceization</displayCategory>
+		<exclusionTags>
+			<li>Mind</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef Name="GeneBiobatteryBase" Abstract="True">
+		<displayCategory>HumanResourceization</displayCategory>
+		<exclusionTags>
+			<li>Biobattery</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef Name="GeneBioferriteTissueBase" Abstract="True">
+		<displayCategory>HumanResourceization</displayCategory>
+		<exclusionTags>
+			<li>BioferriteTissue</li>
+			<li>SkinColorOverride</li>
+		</exclusionTags>
+    	<skinColorOverride>(80, 80, 80)</skinColorOverride>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneMindBase">
+		<defName>FaintMind</defName>
+		<label>faint mind</label>
+		<labelShortAdj>faint-mind</labelShortAdj>
+		<description>Carriers of this gene have a faint mind, reducing escape chance and consciousness.</description>
+		<iconPath>UI/Icons/Genes/Gene_FaintMind</iconPath>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<marketValueFactor>1.5</marketValueFactor>
+		<statFactors>
+			<EscapeIntervalFactor>3</EscapeIntervalFactor>
+		</statFactors>
+		<capMods>
+			<li>
+				<capacity>Consciousness</capacity>
+				<offset>-0.2</offset>
+			</li>
+		</capMods>
+		<biostatMet>-2</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>faint</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneMindBase">
+		<defName>VoidMind</defName>
+		<label>void mind</label>
+		<labelShortAdj>void-mind</labelShortAdj>
+		<description>Carriers of this gene have a completely void mind, greatly reducing escape chance and consciousness.</description>
+		<iconPath>UI/Icons/Genes/Gene_VoidMind</iconPath>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<marketValueFactor>2.0</marketValueFactor>
+		<statFactors>
+			<EscapeIntervalFactor>10</EscapeIntervalFactor>
+		</statFactors>
+		<capMods>
+			<li>
+				<capacity>Consciousness</capacity>
+				<offset>-0.5</offset>
+			</li>
+		</capMods>
+		<biostatMet>-4</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>void</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneBiobatteryBase">
+		<defName>BioBattery</defName>
+		<label>bio battery</label>
+		<labelShortAdj>bio-battery</labelShortAdj>
+		<description>Carriers of this gene experience an inexplicable flow of electrical energy. Electricity extraction is increased, but it comes with pain.</description>
+		<iconPath>UI/Icons/Genes/Gene_BioBattery</iconPath>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<marketValueFactor>1.5</marketValueFactor>
+		<statFactors>
+			<BioelectricCharge>1.2</BioelectricCharge>
+		</statFactors>
+		<painOffset>0.2</painOffset>
+		<biostatMet>-2</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>tingling</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneBiobatteryBase">
+		<defName>LargeBioBattery</defName>
+		<label>large bio battery</label>
+		<labelShortAdj>big-bio-battery</labelShortAdj>
+		<description>Carriers of this gene experience an inexplicable flow of electrical energy. Electricity extraction is greatly increased, but it comes with pain.</description>
+		<iconPath>UI/Icons/Genes/Gene_LargeBioBattery</iconPath>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<marketValueFactor>2.0</marketValueFactor>
+		<statFactors>
+			<BioelectricCharge>1.5</BioelectricCharge>
+		</statFactors>
+		<painOffset>0.4</painOffset>
+		<biostatMet>-4</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>tingling</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneBioferriteTissueBase">
+		<defName>BioferriteTissue</defName>
+		<label>bioferrite tissue</label>
+		<labelShortAdj>bioferrite-tissue</labelShortAdj>
+		<description>Carriers of this gene develop bioferrite tissue, reducing movement speed but allowing bioferrite extraction.</description>
+		<iconPath>UI/Icons/Genes/Gene_BioferriteTissue</iconPath>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<marketValueFactor>2.0</marketValueFactor>
+		<statOffsets>
+			<MoveSpeed>-1</MoveSpeed>
+			<BioferriteDensity>0.6</BioferriteDensity>
+		</statOffsets>
+		<biostatMet>-3</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>thick</symbol></li>
+			</prefixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>

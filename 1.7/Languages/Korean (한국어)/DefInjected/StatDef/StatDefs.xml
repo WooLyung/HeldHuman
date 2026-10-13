@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<EscapeIntervalFactor.label>탈출 주기 계수</EscapeIntervalFactor.label>
+	<EscapeIntervalFactor.description>포획된 인간의 탈출 주기 계수입니다.</EscapeIntervalFactor.description>
+	
+	<BioferriteDensity.label>생체강 밀도</BioferriteDensity.label>
+	<BioferriteDensity.description>포획된 인간으로부터 추가로 추출할 수 있는 생체강의 양입니다.</BioferriteDensity.description>
+	
+	<BioelectricCharge.label>생체 전기량</BioelectricCharge.label>
+	<BioelectricCharge.description>포획된 인간으로부터 추출할 수 있는 전기 생산량의 계수입니다.</BioelectricCharge.description>
+</LanguageData>

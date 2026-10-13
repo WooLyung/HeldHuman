@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <JobDef>
+        <defName>OperateHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_OperateHeldHuman</driverClass>
+        <reportString>operating on TargetB by TargetA.</reportString>
+        <casualInterruptible>false</casualInterruptible>
+        <suspendable>false</suspendable>
+    </JobDef>
+
+    <JobDef>
+        <defName>BloodfeedHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_BloodfeedHeldHuman</driverClass>
+        <reportString>feeding on TargetA.</reportString> 
+    </JobDef>    
+
+    <JobDef>
+        <defName>FeedHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_FoodFeedHeldHuman</driverClass>
+        <reportString>feeding TargetA to TargetB.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>ExecuteHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_ExecuteHeldHuman</driverClass>
+        <reportString>executing TargetA.</reportString>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
+
+    <JobDef>
+        <defName>ReleaseHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_ReleaseHeldHuman</driverClass>
+        <reportString>releasing TargetB</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>StripHeldHuman</defName>
+        <driverClass>HeldHuman.Def.JobDriver_StripHeldHuman</driverClass>
+        <reportString>stripping TargetA.</reportString>
+        <taleOnCompletion>Stripped</taleOnCompletion>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef>
+        <defName>HeldHumanAttemptRecruit</defName>
+        <driverClass>HeldHuman.Def.JobDriver_ChatWithHeldHuman</driverClass>
+        <reportString>attempting to recruit TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>HeldHumanEnslave</defName>
+        <driverClass>HeldHuman.Def.JobDriver_EnslaveOrReduceWillHeldHuman</driverClass>
+        <reportString>enslaving TargetA.</reportString>
+        <alwaysShowWeapon>true</alwaysShowWeapon>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>HeldHumanReduceWill</defName>
+        <driverClass>HeldHuman.Def.JobDriver_EnslaveOrReduceWillHeldHuman</driverClass>
+        <reportString>reducing will of TargetA.</reportString>
+        <alwaysShowWeapon>true</alwaysShowWeapon>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+
+    <JobDef MayRequire="Ludeon.RimWorld.ideology">
+        <defName>HeldHumanConvert</defName>
+        <driverClass>HeldHuman.Def.JobDriver_ConvertHeldHuman</driverClass>
+        <reportString>converting TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+</Defs>
